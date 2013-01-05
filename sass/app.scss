@@ -54,7 +54,14 @@
 
 
 // Globals
-a, i { @include single-transition(all, 200ms); }
+// a, i { @include single-transition(all, 200ms); }
+
+
+// Widgets
+.widget a { font-weight: bold; color: $secondaryColor; }
+.widget p { font-size: .9em; line-height: 1.3em; }
+.widget h4 { font-size: 1.3em; padding-bottom: 14px; border-bottom: 1px dotted rgba(0, 0, 0, 0.2); }
+.widget .button { background: rgba($highlightColor, 0.3); color: $highlightColor; border: 0; }
 
 
 // Helper Classes
@@ -83,10 +90,6 @@ a, i { @include single-transition(all, 200ms); }
 .top-bar ul > li a.active { color: $black; background-color: $white; }
 
 
-// Home
-body#home { background: $white url(../images/home-bg.png) 0 0 repeat-x; }
-
-
 // Footer
 #colophon { padding: 30px 0; background-color: rgb(78,71,66); @include filter-gradient(#4e4742, #2f2721, vertical); @include background-image(linear-gradient(top, rgba(78,71,66,1) 0%, rgba(61,54,48,1) 25%, rgba(47,39,33,1) 100%)); }
 #colophon h5 { font-size: 1em; color: $highlightColor; }
@@ -109,9 +112,27 @@ body#home { background: $white url(../images/home-bg.png) 0 0 repeat-x; }
 #social-nav i { font-size: 2.4em; line-height: .3em; color: $txtColor; }
 #social-nav a:hover i { color: $highlightColor; }
 
+
 // Legal
 #legal { background: #ccc; }
 #legal ul { margin-bottom: 0; }
 #legal li { font-size: .8em; line-height: 4em; }
 #legal a { color: $secondaryColor; font-weight: bold; }
 #legal .divider { width: 1px; background: #aaa; height: 12px; margin: 16px -15px 0 10px; }
+
+
+// Home
+body#home { background: $white url(../images/home-bg.png) 0 0 repeat-x; }
+
+#hero { background: $white; @include box-shadow( rgba(0, 0, 0, 0.3) 0 5px 10px); }
+#hero a { margin: 15px; }
+#hero-wrapper div.orbit-wrapper div.slider-nav span { width: 60px; height: 60px; @include border-radius(50%); background-size: 80%; }
+#hero-wrapper div.orbit-wrapper div.slider-nav span.left { left: -30px; }
+#hero-wrapper div.orbit-wrapper div.slider-nav span.right { right: -30px; }
+#hero-wrapper div.orbit-wrapper div.timer { top: 20px; right: 20px; }
+#hero-wrapper ul.orbit-bullets { bottom: 0; }
+
+#testimonials blockquote { padding: 0; border-left: 0; font-family: serif; font-size: 1em; font-style: italic; font-weight: bold; color: $black; }
+#testimonials cite { font-size: .8em; color: $txtColor; }
+
+#customers-partners { margin-top: 30px; padding: 20px 0;border-top: 2px solid #ddd; background: #e6e6e6; }

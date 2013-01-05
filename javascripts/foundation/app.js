@@ -70,4 +70,43 @@ function OnError(request, status, error)
 
 $(document).ready(function() {
   jQuery.support.cors = true;
+
+  jQuery('#hero').orbit({
+    animation: 'fade',                  // fade, horizontal-slide, vertical-slide, horizontal-push
+    animationSpeed: 400,
+    timer: true,
+    advanceSpeed: 8000,
+    pauseOnHover: true,
+    captions: false,
+    bullets: true,
+    fluid: '16x7'
+  });
+
+  jQuery('#testimonials').orbit({
+    animation: 'horizontal-slide',
+    animationSpeed: 400,
+    timer: false,
+    advanceSpeed: 8000,
+    captions: false,
+    bullets: true,
+    fluid: '16x8'
+  });
+
+  jQuery('#customer-logos').orbit({
+    animation: 'horizontal-slide',
+    animationSpeed: 400,
+    timer: false,
+    advanceSpeed: 8000,
+    captions: false,
+    bullets: false
+  });
+
+  jQuery('#partner-logos').orbit({
+    animation: 'horizontal-slide',
+    animationSpeed: 400,
+    timer: false,
+    advanceSpeed: 8000,
+    captions: false,
+    bullets: false
+  });
 });
