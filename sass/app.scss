@@ -52,7 +52,14 @@
 // Foundation Overrides
 .top-bar { background-color: transparent; }
 
+
 // Globals
+a, i { @include single-transition(all, 200ms); }
+
+
+// Helper Classes
+.cf:after { content: ""; display: table; clear: both; }
+
 
 // Header
 .name { margin: 17px 0 16px; }
@@ -62,11 +69,12 @@
 #login-link a { background: #d0a82e; color: $white; }
 #register-link a { background: #f7f7f7; color: $black; }
 
-#account-credits a { display: block; font-size: 12px; text-transform: uppercase; text-align: center; color: $secondaryColor; }
+#account-credits a { display: block; font-size: .9em; text-transform: uppercase; text-align: center; color: $secondaryColor; }
 #account-credits i { display: block; clear: both; color: $txtColor; }
 #account-credits a:hover,
 #account-credits i:hover { color: $mainColor; }
 #account-credits .divider { width: 2px; background: #ccc; height: 12px; margin: 0; margin-left: 14px; margin-right: -8px; margin-top: 22px; }
+
 
 // Primary Nav / Top Bar
 .top-bar ul > li:not(.name):hover, .top-bar ul > li:not(.name).active { background-color: $white; }
@@ -74,5 +82,36 @@
 .top-bar ul > li a:not(.button) { padding: 0 34.33333px; }
 .top-bar ul > li a.active { color: $black; background-color: $white; }
 
+
 // Home
 body#home { background: $white url(../images/home-bg.png) 0 0 repeat-x; }
+
+
+// Footer
+#colophon { padding: 30px 0; background-color: rgb(78,71,66); @include filter-gradient(#4e4742, #2f2721, vertical); @include background-image(linear-gradient(top, rgba(78,71,66,1) 0%, rgba(61,54,48,1) 25%, rgba(47,39,33,1) 100%)); }
+#colophon h5 { font-size: 1em; color: $highlightColor; }
+#colophon .nav-bar,
+#colophon nav li:hover { background: none; }
+#colophon nav li { border: 0; line-height: 2.6em; }
+#colophon nav a { padding: 0; font-size: .9em; color: $white; }
+#colophon nav a:hover { color: $highlightColor; }
+#colophon label { color: $white; }
+#colophon input[type=text] { background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: $white; }
+
+#footer-nav li { margin-right: 15%; border-bottom: 1px dotted rgba(255, 255, 255, 0.5) !important; }
+
+#download-cta .panel.callout { background-color: $secondaryColor; }
+#download-cta h5 { margin: -20px -20px 15px -20px; padding: 10px 15px; border-bottom: 1px solid #802822; background: #93342c; }
+#download-cta p { font-size: .85em; line-height: 1.4em; }
+
+#newsletter-signup .button { background: $white; color: $black; }
+
+#social-nav i { font-size: 2.4em; line-height: .3em; color: $txtColor; }
+#social-nav a:hover i { color: $highlightColor; }
+
+// Legal
+#legal { background: #ccc; }
+#legal ul { margin-bottom: 0; }
+#legal li { font-size: .8em; line-height: 4em; }
+#legal a { color: $secondaryColor; font-weight: bold; }
+#legal .divider { width: 1px; background: #aaa; height: 12px; margin: 16px -15px 0 10px; }
