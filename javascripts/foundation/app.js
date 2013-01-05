@@ -1,4 +1,5 @@
-;(function ($, window, undefined) {
+;(function ($, window, undefined) 
+{
   'use strict';
 
   var $doc = $(document),
@@ -27,7 +28,8 @@
   // $('.block-grid.five-up>li:nth-child(5n+1)').css({clear: 'both'});
 
   // Hide address bar on mobile devices (except if #hash present, so we don't mess up deep linking).
-  if (Modernizr.touch && !window.location.hash) {
+  if (Modernizr.touch && !window.location.hash) 
+  {
     $(window).load(function () {
       setTimeout(function () {
         window.scrollTo(0, 1);
@@ -36,3 +38,36 @@
   }
 
 })(jQuery, this);
+
+var webServiceURL = '#';
+var soapMessage = '<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope"><soap12:Body><GetAllCategoryFamilies xmlns="http://tempuri.org/" /></soap12:Body></soap12:Envelope>';
+
+function SampleCall()
+{
+  $.ajax({
+    url:          webServiceURL,
+    type:         "POST",
+    dataType:     "xml",
+    data:         soapMessage,
+    processData:  false,
+    contentType:  "text/xml; charset=\"utf-8\"",
+    success:      OnSuccess,
+    error:        OnError
+  });
+
+  return false;
+}
+
+function OnSuccess(data, status)
+{
+  alert(data.d);
+}
+
+function OnError(request, status, error)
+{
+  alert('error');
+}
+
+$(document).ready(function() {
+  jQuery.support.cors = true;
+});
