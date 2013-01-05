@@ -49,4 +49,30 @@
 // Media Queries Overrides
 // @import "foundation/components/modules/mqueries";
 
+// Foundation Overrides
+.top-bar { background-color: transparent; }
+
+// Globals
+
+// Header
+.name { margin: 17px 0 16px; }
+
+#login-register { margin-top: 30px; }
+#login-register a { @include box-shadow( rgba(0, 0, 0, 0.4) 0 0 7px inset ); border: 0; padding: 7px 21px; font-size: .9em; font-weight: 400; text-transform: uppercase; }
+#login-link a { background: #d0a82e; color: $white; }
+#register-link a { background: #f7f7f7; color: $black; }
+
+#account-credits a { display: block; font-size: 12px; text-transform: uppercase; text-align: center; color: $secondaryColor; }
+#account-credits i { display: block; clear: both; color: $txtColor; }
+#account-credits a:hover,
+#account-credits i:hover { color: $mainColor; }
+#account-credits .divider { width: 2px; background: #ccc; height: 12px; margin: 0; margin-left: 14px; margin-right: -8px; margin-top: 22px; }
+
+// Primary Nav / Top Bar
+.top-bar ul > li:not(.name):hover, .top-bar ul > li:not(.name).active { background-color: $white; }
+.top-bar ul > li:not(.name):hover a, .top-bar ul > li:not(.name).active a { color: $black; }
+.top-bar ul > li a:not(.button) { padding: 0 34.33333px; }
+.top-bar ul > li a.active { color: $black; background-color: $white; }
+
+// Home
 body#home { background: $white url(../images/home-bg.png) 0 0 repeat-x; }
