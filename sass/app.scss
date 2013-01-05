@@ -48,3 +48,5 @@
 
 // Media Queries Overrides
 // @import "foundation/components/modules/mqueries";
+
+body#home { background: $white url(../images/home-bg.png) 0 0 repeat-x; }
