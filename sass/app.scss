@@ -50,14 +50,37 @@
 // @import "foundation/components/modules/mqueries";
 
 
+// Globals
+big { text-transform: uppercase; font-size: 1.7em; line-height: 2em; }
+
+
 // Headings
 h4 { padding: 6px 8px; background: rgba($highlightColor, 0.3); font-size: 1.25em; color: $black;}
 p + h4 { margin-top: 42px; }
+
+
+// Forms
+form .required { color: $secondaryColor; }
+
+
+// Internal
+body.internal { background: $white url(../images/internal-bg.png) 0 0 repeat-x; }
+
+
+// Content
+.page-content { background: url(../images/page-content-bg.png) center top no-repeat; padding-bottom: 60px; }
+.page-title { margin-bottom: 28px; padding: 20px; background: $secondaryColor url(../images/page-title-bg.jpg) right top no-repeat; font-size: 2.15em; color: $white; }
+.sub-title { margin: 14px 20px 28px; padding-bottom: 18px; border-bottom: 1px dotted rgba(0, 0, 0, 0.2); font-size: 1.25em; }
+.page-content article { padding: 0 20px; }
+.page-content strong { color: $black; }
+.page-content a { color: $secondaryColor; font-weight: bold; }
+
 
 // Ads
 h4 + .ad { position: relative; margin-top: -14px; }
 .ad-title { font-size: 2.5em; line-height: 1.2em; font-weight: bold; }
 .ad .reverse { color: $white; }
+
 
 // Top bar overrides
 .top-bar { background-color: transparent; }
@@ -66,7 +89,7 @@ h4 + .ad { position: relative; margin-top: -14px; }
 // Panel overrides
 .panel.callout .button,
 .panel.callout .button:hover,
-.button.glass { background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #f6f6f6, vertical); @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%)); @include box-shadow( rgba(106, 159, 189, 0.7) 0 0 5px inset, rgba(0, 0, 0, 0.5) 0 2px 5px); color: $txtColor; @include text-shadow(0px 1px 0px $white); }
+.button.glass { background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #f6f6f6, vertical); @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%)); @include box-shadow( rgba(106, 159, 189, 0.7) 0 0 5px inset, rgba(0, 0, 0, 0.5) 0 2px 5px); border-width: 0; color: $txtColor; @include text-shadow(0px 1px 0px $white); }
 .panel.callout .button:hover,
 .button.glass:hover { @include box-shadow( rgba(255, 255, 255, 1) 0 0 5px inset, rgba(0, 0, 0, 0.7) 0 2px 5px); color: $black; }
 
@@ -77,9 +100,10 @@ ul.orbit-bullets li.active { opacity: 1; }
 
 
 // Widgets
+aside .widget { margin-bottom: 30px; }
 .widget a { font-weight: bold; color: $secondaryColor; }
-.widget p { font-size: .9em; line-height: 1.3em; }
-.widget h4 { font-size: 1.3em; padding-bottom: 14px; border-bottom: 1px dotted rgba(0, 0, 0, 0.2); }
+.widget p { font-size: .9em; line-height: 1.3em; font-style: normal; }
+.widget h4 { padding: 0 0 14px; border-bottom: 1px dotted rgba(0, 0, 0, 0.2); background: transparent; font-size: 1.3em; }
 .widget .button { background: rgba($highlightColor, 0.3); color: $highlightColor; border: 0; }
 
 .widget div.orbit-wrapper div.slider-nav {}
@@ -170,19 +194,6 @@ body#home { background: $white url(../images/home-bg.png) 0 0 repeat-x; }
 #customers-partners { margin-top: 30px; padding: 20px 0;border-top: 2px solid #ddd; background: #e6e6e4; }
 
 
-// Internal
-body.internal { background: $white url(../images/internal-bg.png) 0 0 repeat-x; }
-
-
-// Content
-.page-content { background: url(../images/page-content-bg.png) center top no-repeat; padding-bottom: 60px; }
-.page-title { margin-bottom: 28px; padding: 20px; background: $secondaryColor url(../images/page-title-bg.jpg) right top no-repeat; font-size: 2.15em; color: $white; }
-.sub-title { margin: 14px 20px 28px; padding-bottom: 18px; border-bottom: 1px dotted rgba(0, 0, 0, 0.2); font-size: 1.25em; }
-.page-content article { padding: 0 20px; }
-.page-content strong { color: $black; }
-.page-content a { color: $secondaryColor; font-weight: bold; }
-
-
 // FAQ
 .qa { margin-bottom: 30px; }
 .question { color: $secondaryColor; font-weight: bold; }
@@ -195,3 +206,11 @@ body#services .ad { background: $secondaryColor url(../images/services-ad.jpg) r
 body#services .ad-cta { width: 34%; padding: 40px 70px 0 0; float: right; font-size: 1.55em; line-height: 1.3em; text-align: center; color: $secondaryColor; }
 body#services .ad-title { width: 40%; padding: 40px 0 0 60px; float: left; font-style: italic; }
 body#services .ad-content { width: 40%; padding: 0 0 30px 60px; float: left; line-height: 1.4em; clear: left; }
+
+
+// Contact Us
+body#contact-us .page-content input[type=text],
+body#contact-us .page-content input[type=email],
+body#contact-us .page-content input[type=tel],
+body#contact-us .page-content textarea { margin: 8px 0 16px; padding: 6px 8px; background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #f6f6f6, vertical); @include background-image(linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%)); @include box-shadow( rgba(0, 0, 0, 0.4) 0 1px 4px, rgba(255, 255, 255, 1) 0 1px 0 inset ); border: 1px solid $white; }
+body#contact-us .dropdown { margin-bottom: 16px; }
