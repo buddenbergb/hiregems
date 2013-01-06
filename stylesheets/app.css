@@ -6471,3 +6471,27 @@ body.internal {
 .page-content article {
   padding: 0 20px;
 }
+
+/* line 180, ../sass/app.scss */
+.qa {
+  margin-bottom: 30px;
+}
+
+/* line 181, ../sass/app.scss */
+.question {
+  color: #9e2f22;
+  font-weight: bold;
+}
+
+/* line 182, ../sass/app.scss */
+.question:before {
+  content: 'Q: ';
+  font-weight: normal;
+  color: black;
+}
+
+/* line 183, ../sass/app.scss */
+.answer:before {
+  content: 'A: ';
+  color: black;
+}

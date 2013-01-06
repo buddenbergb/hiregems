@@ -174,3 +174,10 @@ body.internal { background: $white url(../images/internal-bg.png) 0 0 repeat-x; 
 .page-title { margin-bottom: 28px; padding: 20px; background: $secondaryColor url(../images/page-title-bg.jpg) right top no-repeat; font-size: 2.15em; color: $white; }
 .sub-title { margin: 14px 20px 28px; padding-bottom: 18px; border-bottom: 1px dotted rgba(0, 0, 0, 0.2); font-size: 1.25em; }
 .page-content article { padding: 0 20px; }
+
+
+// FAQ
+.qa { margin-bottom: 30px; }
+.question { color: $secondaryColor; font-weight: bold; }
+.question:before { content: 'Q: '; font-weight: normal; color: $black; }
+.answer:before { content: 'A: '; color: $black; }
