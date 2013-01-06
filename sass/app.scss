@@ -49,17 +49,22 @@
 // Media Queries Overrides
 // @import "foundation/components/modules/mqueries";
 
-// Foundation Overrides
+
+// Headings
+h4 { padding: 6px 8px; background: rgba($highlightColor, 0.3); font-size: 1.25em; color: $black;}
+
+
+// Top bar overrides
 .top-bar { background-color: transparent; }
 
 
-// Globals
-// a, i { @include single-transition(all, 200ms); }
+// Panel overrides
 .panel.callout .button,
 .panel.callout .button:hover,
 .button.glass { background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #f6f6f6, vertical); @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%)); @include box-shadow( rgba(106, 159, 189, 0.7) 0 0 5px inset, rgba(0, 0, 0, 0.5) 0 2px 5px); color: $txtColor; @include text-shadow(0px 1px 0px $white); }
 .panel.callout .button:hover,
 .button.glass:hover { @include box-shadow( rgba(255, 255, 255, 1) 0 0 5px inset, rgba(0, 0, 0, 0.7) 0 2px 5px); color: $black; }
+
 
 // Orbit overrides
 ul.orbit-bullets li { width: 15px; height: 15px; margin-left: 10px; background-image: none; background-color: $highlightColor; @include border-radius(50%); border: 1px solid #ba9d40; opacity: 0.3; }
@@ -158,3 +163,14 @@ body#home { background: $white url(../images/home-bg.png) 0 0 repeat-x; }
 #testimonials cite { font-size: .8em; color: $txtColor; }
 
 #customers-partners { margin-top: 30px; padding: 20px 0;border-top: 2px solid #ddd; background: #e6e6e4; }
+
+
+// Internal
+body.internal { background: $white url(../images/internal-bg.png) 0 0 repeat-x; }
+
+
+// Content
+.page-content { background: url(../images/page-content-bg.png) center top no-repeat; padding-bottom: 60px; }
+.page-title { margin-bottom: 28px; padding: 20px; background: $secondaryColor url(../images/page-title-bg.jpg) right top no-repeat; font-size: 2.15em; color: $white; }
+.sub-title { margin: 14px 20px 28px; padding-bottom: 18px; border-bottom: 1px dotted rgba(0, 0, 0, 0.2); font-size: 1.25em; }
+.page-content article { padding: 0 20px; }
