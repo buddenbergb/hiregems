@@ -110,7 +110,7 @@ header { padding-top: 14px; }
 .top-bar ul > li:not(.name):hover a, .top-bar ul > li:not(.name).active a { color: $black; }
 .top-bar ul > li a:not(.button) { padding: 0 34.33333px; }
 .top-bar ul > li a.active { color: $black; background-color: $white; }
-
+.top-bar ul > li.toggle-topbar:hover { background-color: transparent; }
 
 // Footer
 #colophon { padding: 30px 0; background-color: rgb(78,71,66); @include filter-gradient(#4e4742, #2f2721, vertical); @include background-image(linear-gradient(top, rgba(78,71,66,1) 0%, rgba(61,54,48,1) 25%, rgba(47,39,33,1) 100%)); }

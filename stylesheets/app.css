@@ -6197,6 +6197,11 @@ header {
   background-color: white;
 }
 
+/* line 113, ../sass/app.scss */
+.top-bar ul > li.toggle-topbar:hover {
+  background-color: transparent;
+}
+
 /* line 116, ../sass/app.scss */
 #colophon {
   padding: 30px 0;
