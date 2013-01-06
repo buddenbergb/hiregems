@@ -1,0 +1,30 @@
+<IfModule mod_rewrite.c>
+
+# Redirect to 404 page if not found
+ErrorDocument 404 /404/index.html
+
+# Tell the server to follow symbolic links
+Options +FollowSymLinks
+
+# Tell the server to guess the URL
+Options -Indexes -MultiViews
+AcceptPathInfo Off
+
+# Turn the rewrite engine on
+RewriteEngine On
+
+# Establish our rewrite base URL
+RewriteBase /
+
+# Redirect all non-www to www
+RewriteCond %{HTTP_HOST} ^hiregems\.com
+RewriteRule ^(.*)$ http://www.hiregems.com/$1 [R=permanent,L]
+
+# Single 301 redirects for happy search engines
+redirect 301 http://www.hiregems.com/index.html /
+
+# If the single rewrites above didn't catch the URL, then rewrite the URL 
+# if it contains .html or .asp or .aspx; remove it and give only the base dir path
+RewriteRule ^(.*)index\.(html|asp|aspx)$ http://%{HTTP_HOST}/$1 [R=301,L]
+
+</IfModule>
