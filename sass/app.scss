@@ -61,6 +61,11 @@ p + h4 { margin-top: 42px; }
 
 // Forms
 form .required { color: $secondaryColor; }
+.page-content input[type=text],
+.page-content input[type=email],
+.page-content input[type=tel],
+.page-content input[type=password],
+.page-content textarea { margin: 8px 0 16px; padding: 6px 8px; background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #f6f6f6, vertical); @include background-image(linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%)); @include box-shadow( rgba(0, 0, 0, 0.4) 0 1px 4px, rgba(255, 255, 255, 1) 0 1px 0 inset ); border: 1px solid $white; }
 
 
 // Internal
@@ -214,8 +219,4 @@ body#services .ad-content { width: 40%; padding: 0 0 30px 60px; float: left; lin
 
 
 // Contact Us
-body#contact-us .page-content input[type=text],
-body#contact-us .page-content input[type=email],
-body#contact-us .page-content input[type=tel],
-body#contact-us .page-content textarea { margin: 8px 0 16px; padding: 6px 8px; background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #f6f6f6, vertical); @include background-image(linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%)); @include box-shadow( rgba(0, 0, 0, 0.4) 0 1px 4px, rgba(255, 255, 255, 1) 0 1px 0 inset ); border: 1px solid $white; }
 body#contact-us .dropdown { margin-bottom: 16px; }
