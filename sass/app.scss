@@ -68,6 +68,11 @@ ul.orbit-bullets li.active { opacity: 1; }
 .widget h4 { font-size: 1.3em; padding-bottom: 14px; border-bottom: 1px dotted rgba(0, 0, 0, 0.2); }
 .widget .button { background: rgba($highlightColor, 0.3); color: $highlightColor; border: 0; }
 
+.widget div.orbit-wrapper div.slider-nav {}
+.widget div.orbit-wrapper div.slider-nav span { width: 7px; height: 11px; background: transparent url(../images/orbit-nav-sprite.png) -30px -395px no-repeat; top: -20px; }
+.widget div.orbit-wrapper div.slider-nav span.left { left: auto; right: 20px; }
+.widget div.orbit-wrapper div.slider-nav span.right { background-position: -32px -425px; }
+
 
 // Helper Classes
 .cf:after { content: ""; display: table; clear: both; }
