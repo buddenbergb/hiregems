@@ -76,7 +76,6 @@ $(document).ready(function() {
     animationSpeed: 400,
     timer: true,
     advanceSpeed: 8000,
-    pauseOnHover: true,
     captions: false,
     bullets: true,
     fluid: '16x7'
@@ -92,7 +91,7 @@ $(document).ready(function() {
     fluid: '16x8'
   });
 
-  jQuery('#customer-logos').orbit({
+  jQuery('#customer-logos, #partner-logos').orbit({
     animation: 'horizontal-slide',
     animationSpeed: 400,
     timer: false,
@@ -101,12 +100,4 @@ $(document).ready(function() {
     bullets: false
   });
 
-  jQuery('#partner-logos').orbit({
-    animation: 'horizontal-slide',
-    animationSpeed: 400,
-    timer: false,
-    advanceSpeed: 8000,
-    captions: false,
-    bullets: false
-  });
 });
