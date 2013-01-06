@@ -69,9 +69,11 @@
 
 
 // Header
-.name { margin: 17px 0 16px; }
+header { padding-top: 14px; }
+#brand { background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #d1d1d1, vertical); @include background-image(linear-gradient(top, rgba(255,255,255,1) 0%,rgba(209,209,209,1) 100%)); }
+.name { margin: 10px 0 0; }
 
-#login-register { margin-top: 30px; }
+#login-register { margin-top: 15px; }
 #login-register a { @include box-shadow( rgba(0, 0, 0, 0.4) 0 0 7px inset ); border: 0; padding: 7px 21px; font-size: .9em; font-weight: 400; text-transform: uppercase; }
 #login-link a { background: #d0a82e; color: $white; }
 #register-link a { background: #f7f7f7; color: $black; }
@@ -79,11 +81,12 @@
 #account-credits a { display: block; font-size: .9em; text-transform: uppercase; text-align: center; color: $secondaryColor; }
 #account-credits i { display: block; clear: both; color: $txtColor; }
 #account-credits a:hover,
-#account-credits i:hover { color: $mainColor; }
+#account-credits a:hover i { color: $mainColor; }
 #account-credits .divider { width: 2px; background: #ccc; height: 12px; margin: 0; margin-left: 14px; margin-right: -8px; margin-top: 22px; }
 
 
 // Primary Nav / Top Bar
+.top-bar { background-color: rgb(46,38,33); @include filter-gradient(#2e2621, #110f0e, vertical); @include background-image(linear-gradient(top, rgba(46,38,33,1) 0%,rgba(79,73,68,1) 95%,rgba(17,15,14,1) 100%)); }
 .top-bar ul > li:not(.name):hover, .top-bar ul > li:not(.name).active { background-color: $white; }
 .top-bar ul > li:not(.name):hover a, .top-bar ul > li:not(.name).active a { color: $black; }
 .top-bar ul > li a:not(.button) { padding: 0 34.33333px; }

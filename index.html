@@ -9,8 +9,8 @@
   <script src="javascripts/foundation/modernizr.foundation.js"></script>
 </head>
 <body id="home" class="public">
-  <header id="brand" class="row">
-    <div class="twelve columns">
+  <header>
+    <div id="brand">
       <div class="row">
         <h1 class="two columns name">
           <a href="#" title="hireGEMS">
@@ -32,8 +32,10 @@
           </nav>
         </div>
       </div><!-- .row -->
-      <nav class="top-bar">
-        <section>
+    </div><!-- #brand -->
+    <nav class="top-bar">
+      <div class="row">
+        <div class="twelve columns">
           <ul class="left">
             <li class="divider"></li>
             <li id="nav-home"><a href="#" class="active">Home</a></li> <li class="divider"></li>
@@ -44,10 +46,10 @@
             <li id="nav-contact-us"><a href="#">Contact Us</a></li> <li class="divider"></li>
             <li class="toggle-topbar"><a href="#"></a></li>
           </ul>
-        </section>
-      </nav>
-    </div>
-  </header><!-- #brand -->
+        </div>
+      </div>
+    </nav>
+  </header>
   <div id="main" role="main">
     <div class="row">
       <div id="hero-wrapper">
