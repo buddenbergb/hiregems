@@ -5971,7 +5971,35 @@ table.hide-for-medium {
   background-color: transparent;
 }
 
-/* line 61, ../sass/app.scss */
+/* line 60, ../sass/app.scss */
+.panel.callout .button,
+.panel.callout .button:hover,
+.button.glass {
+  background-color: white;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFF6F6F6');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #f1f1f1), color-stop(51%, #e1e1e1), color-stop(100%, #f6f6f6));
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+  -webkit-box-shadow: rgba(106, 159, 189, 0.7) 0 0 5px inset, rgba(0, 0, 0, 0.5) 0 2px 5px;
+  -moz-box-shadow: rgba(106, 159, 189, 0.7) 0 0 5px inset, rgba(0, 0, 0, 0.5) 0 2px 5px;
+  box-shadow: rgba(106, 159, 189, 0.7) 0 0 5px inset, rgba(0, 0, 0, 0.5) 0 2px 5px;
+  color: #74706e;
+  text-shadow: 0px 1px 0px white;
+}
+
+/* line 62, ../sass/app.scss */
+.panel.callout .button:hover,
+.button.glass:hover {
+  -webkit-box-shadow: white 0 0 5px inset, rgba(0, 0, 0, 0.7) 0 2px 5px;
+  -moz-box-shadow: white 0 0 5px inset, rgba(0, 0, 0, 0.7) 0 2px 5px;
+  box-shadow: white 0 0 5px inset, rgba(0, 0, 0, 0.7) 0 2px 5px;
+  color: black;
+}
+
+/* line 65, ../sass/app.scss */
 ul.orbit-bullets li {
   width: 15px;
   height: 15px;
@@ -5987,38 +6015,38 @@ ul.orbit-bullets li {
   opacity: 0.3;
 }
 
-/* line 62, ../sass/app.scss */
+/* line 66, ../sass/app.scss */
 ul.orbit-bullets li.active {
   opacity: 1;
 }
 
-/* line 66, ../sass/app.scss */
+/* line 70, ../sass/app.scss */
 .widget a {
   font-weight: bold;
   color: #9e2f22;
 }
 
-/* line 67, ../sass/app.scss */
+/* line 71, ../sass/app.scss */
 .widget p {
   font-size: .9em;
   line-height: 1.3em;
 }
 
-/* line 68, ../sass/app.scss */
+/* line 72, ../sass/app.scss */
 .widget h4 {
   font-size: 1.3em;
   padding-bottom: 14px;
   border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
 }
 
-/* line 69, ../sass/app.scss */
+/* line 73, ../sass/app.scss */
 .widget .button {
   background: rgba(206, 167, 43, 0.3);
   color: #cea72b;
   border: 0;
 }
 
-/* line 72, ../sass/app.scss */
+/* line 76, ../sass/app.scss */
 .widget div.orbit-wrapper div.slider-nav span {
   width: 7px;
   height: 11px;
@@ -6026,30 +6054,30 @@ ul.orbit-bullets li.active {
   top: -20px;
 }
 
-/* line 73, ../sass/app.scss */
+/* line 77, ../sass/app.scss */
 .widget div.orbit-wrapper div.slider-nav span.left {
   left: auto;
   right: 20px;
 }
 
-/* line 74, ../sass/app.scss */
+/* line 78, ../sass/app.scss */
 .widget div.orbit-wrapper div.slider-nav span.right {
   background-position: -32px -425px;
 }
 
-/* line 78, ../sass/app.scss */
+/* line 82, ../sass/app.scss */
 .cf:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 82, ../sass/app.scss */
+/* line 86, ../sass/app.scss */
 header {
   padding-top: 14px;
 }
 
-/* line 83, ../sass/app.scss */
+/* line 87, ../sass/app.scss */
 #brand {
   background-color: white;
   *zoom: 1;
@@ -6061,17 +6089,17 @@ header {
   background-image: linear-gradient(top, #ffffff 0%, #d1d1d1 100%);
 }
 
-/* line 84, ../sass/app.scss */
+/* line 88, ../sass/app.scss */
 .name {
   margin: 10px 0 0;
 }
 
-/* line 86, ../sass/app.scss */
+/* line 90, ../sass/app.scss */
 #login-register {
   margin-top: 15px;
 }
 
-/* line 87, ../sass/app.scss */
+/* line 91, ../sass/app.scss */
 #login-register a {
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 7px inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 7px inset;
@@ -6083,19 +6111,19 @@ header {
   text-transform: uppercase;
 }
 
-/* line 88, ../sass/app.scss */
+/* line 92, ../sass/app.scss */
 #login-link a {
   background: #d0a82e;
   color: white;
 }
 
-/* line 89, ../sass/app.scss */
+/* line 93, ../sass/app.scss */
 #register-link a {
   background: #f7f7f7;
   color: black;
 }
 
-/* line 91, ../sass/app.scss */
+/* line 95, ../sass/app.scss */
 #account-credits a {
   display: block;
   font-size: .9em;
@@ -6104,20 +6132,20 @@ header {
   color: #9e2f22;
 }
 
-/* line 92, ../sass/app.scss */
+/* line 96, ../sass/app.scss */
 #account-credits i {
   display: block;
   clear: both;
   color: #74706e;
 }
 
-/* line 94, ../sass/app.scss */
+/* line 98, ../sass/app.scss */
 #account-credits a:hover,
 #account-credits a:hover i {
   color: #2b231d;
 }
 
-/* line 95, ../sass/app.scss */
+/* line 99, ../sass/app.scss */
 #account-credits .divider {
   width: 2px;
   background: #ccc;
@@ -6128,7 +6156,7 @@ header {
   margin-top: 22px;
 }
 
-/* line 99, ../sass/app.scss */
+/* line 103, ../sass/app.scss */
 .top-bar {
   background-color: #2e2621;
   *zoom: 1;
@@ -6140,28 +6168,28 @@ header {
   background-image: linear-gradient(top, #2e2621 0%, #4f4944 95%, #110f0e 100%);
 }
 
-/* line 100, ../sass/app.scss */
+/* line 104, ../sass/app.scss */
 .top-bar ul > li:not(.name):hover, .top-bar ul > li:not(.name).active {
   background-color: white;
 }
 
-/* line 101, ../sass/app.scss */
+/* line 105, ../sass/app.scss */
 .top-bar ul > li:not(.name):hover a, .top-bar ul > li:not(.name).active a {
   color: black;
 }
 
-/* line 102, ../sass/app.scss */
+/* line 106, ../sass/app.scss */
 .top-bar ul > li a:not(.button) {
   padding: 0 34.33333px;
 }
 
-/* line 103, ../sass/app.scss */
+/* line 107, ../sass/app.scss */
 .top-bar ul > li a.active {
   color: black;
   background-color: white;
 }
 
-/* line 107, ../sass/app.scss */
+/* line 111, ../sass/app.scss */
 #colophon {
   padding: 30px 0;
   background-color: #4e4742;
@@ -6174,60 +6202,60 @@ header {
   background-image: linear-gradient(top, #4e4742 0%, #3d3630 25%, #2f2721 100%);
 }
 
-/* line 108, ../sass/app.scss */
+/* line 112, ../sass/app.scss */
 #colophon h5 {
   font-size: 1em;
   color: #cea72b;
 }
 
-/* line 110, ../sass/app.scss */
+/* line 114, ../sass/app.scss */
 #colophon .nav-bar,
 #colophon nav li:hover {
   background: none;
 }
 
-/* line 111, ../sass/app.scss */
+/* line 115, ../sass/app.scss */
 #colophon nav li {
   border: 0;
   line-height: 2.6em;
 }
 
-/* line 112, ../sass/app.scss */
+/* line 116, ../sass/app.scss */
 #colophon nav a {
   padding: 0;
   font-size: .9em;
   color: white;
 }
 
-/* line 113, ../sass/app.scss */
+/* line 117, ../sass/app.scss */
 #colophon nav a:hover {
   color: #cea72b;
 }
 
-/* line 114, ../sass/app.scss */
+/* line 118, ../sass/app.scss */
 #colophon label {
   color: white;
 }
 
-/* line 115, ../sass/app.scss */
+/* line 119, ../sass/app.scss */
 #colophon input[type=text] {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
 }
 
-/* line 117, ../sass/app.scss */
+/* line 121, ../sass/app.scss */
 #footer-nav li {
-  margin-right: 15%;
   border-bottom: 1px dotted rgba(255, 255, 255, 0.5) !important;
+  line-height: 2.1em !important;
 }
 
-/* line 119, ../sass/app.scss */
+/* line 123, ../sass/app.scss */
 #download-cta .panel.callout {
   background-color: #9e2f22;
 }
 
-/* line 120, ../sass/app.scss */
+/* line 124, ../sass/app.scss */
 #download-cta h5 {
   margin: -20px -20px 15px -20px;
   padding: 10px 15px;
@@ -6235,53 +6263,47 @@ header {
   background: #93342c;
 }
 
-/* line 121, ../sass/app.scss */
+/* line 125, ../sass/app.scss */
 #download-cta p {
   font-size: .85em;
   line-height: 1.4em;
 }
 
-/* line 123, ../sass/app.scss */
-#newsletter-signup .button {
-  background: white;
-  color: black;
-}
-
-/* line 125, ../sass/app.scss */
+/* line 127, ../sass/app.scss */
 #social-nav i {
   font-size: 2.4em;
   line-height: .3em;
   color: #74706e;
 }
 
-/* line 126, ../sass/app.scss */
+/* line 128, ../sass/app.scss */
 #social-nav a:hover i {
   color: #cea72b;
 }
 
-/* line 130, ../sass/app.scss */
+/* line 132, ../sass/app.scss */
 #legal {
   background: #ccc;
 }
 
-/* line 131, ../sass/app.scss */
+/* line 133, ../sass/app.scss */
 #legal ul {
   margin-bottom: 0;
 }
 
-/* line 132, ../sass/app.scss */
+/* line 134, ../sass/app.scss */
 #legal li {
   font-size: .8em;
   line-height: 4em;
 }
 
-/* line 133, ../sass/app.scss */
+/* line 135, ../sass/app.scss */
 #legal a {
   color: #9e2f22;
   font-weight: bold;
 }
 
-/* line 134, ../sass/app.scss */
+/* line 136, ../sass/app.scss */
 #legal .divider {
   width: 1px;
   background: #aaa;
@@ -6289,12 +6311,12 @@ header {
   margin: 16px -15px 0 10px;
 }
 
-/* line 138, ../sass/app.scss */
+/* line 140, ../sass/app.scss */
 body#home {
   background: white url(../images/home-bg.png) 0 0 repeat-x;
 }
 
-/* line 140, ../sass/app.scss */
+/* line 142, ../sass/app.scss */
 #hero {
   background: white;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 5px 10px;
@@ -6302,12 +6324,12 @@ body#home {
   box-shadow: rgba(0, 0, 0, 0.3) 0 5px 10px;
 }
 
-/* line 141, ../sass/app.scss */
+/* line 143, ../sass/app.scss */
 #hero a {
   margin: 15px;
 }
 
-/* line 142, ../sass/app.scss */
+/* line 144, ../sass/app.scss */
 #hero-wrapper div.orbit-wrapper div.slider-nav span {
   width: 50px;
   height: 50px;
@@ -6319,34 +6341,34 @@ body#home {
   background: transparent url(../images/orbit-nav-sprite.png) no-repeat;
 }
 
-/* line 143, ../sass/app.scss */
+/* line 145, ../sass/app.scss */
 #hero-wrapper div.orbit-wrapper div.slider-nav span.left {
   left: -25px;
   background-position: -10px -10px;
 }
 
-/* line 144, ../sass/app.scss */
+/* line 146, ../sass/app.scss */
 #hero-wrapper div.orbit-wrapper div.slider-nav span.right {
   right: -25px;
   background-position: -10px -80px;
 }
 
-/* line 145, ../sass/app.scss */
+/* line 147, ../sass/app.scss */
 #hero-wrapper div.orbit-wrapper div.slider-nav span.left:hover {
   background-position: -10px -150px;
 }
 
-/* line 146, ../sass/app.scss */
+/* line 148, ../sass/app.scss */
 #hero-wrapper div.orbit-wrapper div.slider-nav span.right:hover {
   background-position: -10px -220px;
 }
 
-/* line 147, ../sass/app.scss */
+/* line 149, ../sass/app.scss */
 #hero-wrapper ul.orbit-bullets {
   bottom: 0;
 }
 
-/* line 148, ../sass/app.scss */
+/* line 150, ../sass/app.scss */
 #hero-wrapper div.orbit-wrapper div.timer {
   width: 16px;
   height: 16px;
@@ -6356,12 +6378,12 @@ body#home {
   opacity: 1;
 }
 
-/* line 149, ../sass/app.scss */
+/* line 151, ../sass/app.scss */
 #hero-wrapper div.orbit-wrapper span.mask {
   display: none;
 }
 
-/* line 150, ../sass/app.scss */
+/* line 152, ../sass/app.scss */
 #hero-wrapper div.orbit-wrapper span.pause {
   width: 16px;
   height: 16px;
@@ -6369,22 +6391,22 @@ body#home {
   background: transparent url(../images/orbit-nav-sprite.png) -27px -287px no-repeat;
 }
 
-/* line 151, ../sass/app.scss */
+/* line 153, ../sass/app.scss */
 #hero-wrapper div.orbit-wrapper span.pause:hover {
   background-position: -27px -337px;
 }
 
-/* line 152, ../sass/app.scss */
+/* line 154, ../sass/app.scss */
 #hero-wrapper div.orbit-wrapper span.pause.active {
   background-position: -27px -311px;
 }
 
-/* line 153, ../sass/app.scss */
+/* line 155, ../sass/app.scss */
 #hero-wrapper div.orbit-wrapper span.pause.active:hover {
   background-position: -27px -361px;
 }
 
-/* line 155, ../sass/app.scss */
+/* line 157, ../sass/app.scss */
 #testimonials blockquote {
   padding: 0;
   border-left: 0;
@@ -6395,13 +6417,13 @@ body#home {
   color: black;
 }
 
-/* line 156, ../sass/app.scss */
+/* line 158, ../sass/app.scss */
 #testimonials cite {
   font-size: .8em;
   color: #74706e;
 }
 
-/* line 158, ../sass/app.scss */
+/* line 160, ../sass/app.scss */
 #customers-partners {
   margin-top: 30px;
   padding: 20px 0;

@@ -55,7 +55,11 @@
 
 // Globals
 // a, i { @include single-transition(all, 200ms); }
-
+.panel.callout .button,
+.panel.callout .button:hover,
+.button.glass { background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #f6f6f6, vertical); @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%)); @include box-shadow( rgba(106, 159, 189, 0.7) 0 0 5px inset, rgba(0, 0, 0, 0.5) 0 2px 5px); color: $txtColor; @include text-shadow(0px 1px 0px $white); }
+.panel.callout .button:hover,
+.button.glass:hover { @include box-shadow( rgba(255, 255, 255, 1) 0 0 5px inset, rgba(0, 0, 0, 0.7) 0 2px 5px); color: $black; }
 
 // Orbit overrides
 ul.orbit-bullets li { width: 15px; height: 15px; margin-left: 10px; background-image: none; background-color: $highlightColor; @include border-radius(50%); border: 1px solid #ba9d40; opacity: 0.3; }
@@ -114,13 +118,11 @@ header { padding-top: 14px; }
 #colophon label { color: $white; }
 #colophon input[type=text] { background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: $white; }
 
-#footer-nav li { margin-right: 15%; border-bottom: 1px dotted rgba(255, 255, 255, 0.5) !important; }
+#footer-nav li { border-bottom: 1px dotted rgba(255, 255, 255, 0.5) !important; line-height: 2.1em !important; }
 
 #download-cta .panel.callout { background-color: $secondaryColor; }
 #download-cta h5 { margin: -20px -20px 15px -20px; padding: 10px 15px; border-bottom: 1px solid #802822; background: #93342c; }
 #download-cta p { font-size: .85em; line-height: 1.4em; }
-
-#newsletter-signup .button { background: $white; color: $black; }
 
 #social-nav i { font-size: 2.4em; line-height: .3em; color: $txtColor; }
 #social-nav a:hover i { color: $highlightColor; }
