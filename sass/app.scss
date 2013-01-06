@@ -52,7 +52,12 @@
 
 // Headings
 h4 { padding: 6px 8px; background: rgba($highlightColor, 0.3); font-size: 1.25em; color: $black;}
+p + h4 { margin-top: 42px; }
 
+// Ads
+h4 + .ad { position: relative; margin-top: -14px; }
+.ad-title { font-size: 2.5em; line-height: 1.2em; font-weight: bold; }
+.ad .reverse { color: $white; }
 
 // Top bar overrides
 .top-bar { background-color: transparent; }
@@ -174,6 +179,8 @@ body.internal { background: $white url(../images/internal-bg.png) 0 0 repeat-x; 
 .page-title { margin-bottom: 28px; padding: 20px; background: $secondaryColor url(../images/page-title-bg.jpg) right top no-repeat; font-size: 2.15em; color: $white; }
 .sub-title { margin: 14px 20px 28px; padding-bottom: 18px; border-bottom: 1px dotted rgba(0, 0, 0, 0.2); font-size: 1.25em; }
 .page-content article { padding: 0 20px; }
+.page-content strong { color: $black; }
+.page-content a { color: $secondaryColor; font-weight: bold; }
 
 
 // FAQ
@@ -181,3 +188,10 @@ body.internal { background: $white url(../images/internal-bg.png) 0 0 repeat-x; 
 .question { color: $secondaryColor; font-weight: bold; }
 .question:before { content: 'Q: '; font-weight: normal; color: $black; }
 .answer:before { content: 'A: '; color: $black; }
+
+
+// Services
+body#services .ad { background: $secondaryColor url(../images/services-ad.jpg) right top no-repeat; }
+body#services .ad-cta { width: 34%; padding: 40px 70px 0 0; float: right; font-size: 1.55em; line-height: 1.3em; text-align: center; color: $secondaryColor; }
+body#services .ad-title { width: 40%; padding: 40px 0 0 60px; float: left; font-style: italic; }
+body#services .ad-content { width: 40%; padding: 0 0 30px 60px; float: left; line-height: 1.4em; clear: left; }
