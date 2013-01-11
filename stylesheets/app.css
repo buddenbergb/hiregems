@@ -6868,10 +6868,11 @@ body#contact-us .dropdown {
 }
 
 /* line 275, ../sass/app.scss */
-.menu-title {
+.menu-title strong {
+  display: block;
   padding: 8px 12px;
   background: #cea72b;
-  color: #2b231d;
+  color: white;
 }
 
 /* line 276, ../sass/app.scss */
@@ -6944,7 +6945,7 @@ h4 + table {
   border-radius: 0 0 3px 3px;
 }
 
-/* line 293, ../sass/app.scss */
+/* line 292, ../sass/app.scss */
 .block a {
   margin: 3px 6px 9px;
   padding: 10px 0;
@@ -6957,7 +6958,7 @@ h4 + table {
   text-align: center;
 }
 
-/* line 294, ../sass/app.scss */
+/* line 293, ../sass/app.scss */
 .block * {
   display: block;
   clear: both;
@@ -6966,30 +6967,30 @@ h4 + table {
   line-height: 1.1em;
 }
 
-/* line 295, ../sass/app.scss */
+/* line 294, ../sass/app.scss */
 .block .credit-qty {
   font-size: 2.2em;
   font-weight: bold;
 }
 
-/* line 296, ../sass/app.scss */
+/* line 295, ../sass/app.scss */
 .block big {
   font-weight: normal;
   color: #74706e;
 }
 
-/* line 297, ../sass/app.scss */
+/* line 296, ../sass/app.scss */
 .block .button {
   max-width: 70px;
   margin: 10px auto 5px;
 }
 
-/* line 298, ../sass/app.scss */
+/* line 297, ../sass/app.scss */
 .block a:hover {
   border-color: #cea72b;
 }
 
-/* line 300, ../sass/app.scss */
+/* line 299, ../sass/app.scss */
 #custom-credits {
   background: #eee;
   -webkit-border-radius: 5px;
@@ -7000,7 +7001,7 @@ h4 + table {
   padding: 10px;
 }
 
-/* line 301, ../sass/app.scss */
+/* line 300, ../sass/app.scss */
 #custom-credits .one.column {
   display: inline-block;
   padding: 0;
@@ -7008,12 +7009,29 @@ h4 + table {
   line-height: 2.1em;
 }
 
-/* line 302, ../sass/app.scss */
+/* line 301, ../sass/app.scss */
 #custom-credits input {
   margin-bottom: 0;
 }
 
-/* line 304, ../sass/app.scss */
+/* line 303, ../sass/app.scss */
 #promo-codes strong {
   line-height: 2.4em;
+}
+
+/* line 307, ../sass/app.scss */
+#history-table {
+  margin-top: 17px;
+}
+
+/* line 309, ../sass/app.scss */
+#history-table th,
+#history-table td {
+  font-size: .8em;
+  width: 12.25%;
+}
+
+/* line 310, ../sass/app.scss */
+th[data-sort] {
+  cursor: pointer;
 }

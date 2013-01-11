@@ -272,7 +272,7 @@ body#contact-us .dropdown { margin-bottom: 16px; }
 
 
 // My Account
-.menu-title { padding: 8px 12px; background: $highlightColor; color: $mainColor; }
+.menu-title strong { display: block; padding: 8px 12px; background: $highlightColor; color: $white; }
 #account-menu li { margin: 0; }
 #account-menu a { position: relative; background: #eee; font-size: .825em; line-height: 3.5em; padding-left: 23px; color:  $txtColor; }
 #account-menu a:after { left: 12px; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(161, 64, 55, 0); border-left-color: #a14037; border-width: 5px; top: 50%; margin-top: -5px; }
@@ -289,7 +289,6 @@ h4 + table { margin-top: -14px; @include border-radius(0 0 3px 3px); }
 
 
 // My Credits
-#credit-tiles {  }
 .block a { margin: 3px 6px 9px; padding: 10px 0; @include border-radius(10px); border: 3px solid #eee; text-align: center; }
 .block * { display: block; clear: both; width: auto; margin: 0 auto; line-height: 1.1em; }
 .block .credit-qty { font-size: 2.2em; font-weight: bold; }
@@ -302,3 +301,10 @@ h4 + table { margin-top: -14px; @include border-radius(0 0 3px 3px); }
 #custom-credits input { margin-bottom: 0; }
 
 #promo-codes strong { line-height: 2.4em; }
+
+
+// Activity History
+#history-table { margin-top: 17px; }
+#history-table th,
+#history-table td { font-size: .8em; width: 12.25%; }
+th[data-sort]{ cursor: pointer; }

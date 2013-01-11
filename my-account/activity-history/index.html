@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/stylesheets/app.css">
   <script src="/javascripts/foundation/modernizr.foundation.js"></script>
 </head>
-<body id="404" class="public internal">
+<body id="activity-history" class="private internal">
   <header>
     <div id="brand">
       <div class="row">
@@ -61,11 +61,102 @@
     <div class="row page-content">
       <div class="twelve columns">
         <hgroup>
-          <h2 class="page-title">Page Not Found</h2>
-          <h3 class="sub-title">Perhaps you should search.</h3>
+          <h2 class="page-title">My Account</h2>
+          <h3 class="sub-title">Activity History</h3>
         </hgroup>
         <article>
-          <p>Search</p>
+          <nav id="account-menu" class="three columns">
+            <ul class="side-nav">
+              <li class="menu-title"><strong>Welcome, Joseph!</strong></li>
+              <li class="divider"></li>
+              <li><a href="/my-account/account-information/">Account Information</a></li> <li class="divider"></li>
+              <li><a href="/my-account/my-credits/">My Credits</a></li> <li class="divider"></li>
+              <li class="active"><a href="/my-account/activity-history/">Activity History</a></li> <li class="divider"></li>
+              <li><a href="/my-account/billing-history/">Billing History</a></li> <li class="divider"></li>
+              <li><a href="/my-account/newsletter-subscriptions/">Newsletter Subscriptions</a></li> <li class="divider"></li>
+            </ul>
+          </nav>
+          <div class="nine columns">
+            <div class="row">
+              <table id="history-table" class="twelve">
+                <thead>
+                  <tr>
+                    <th scope="col" data-sort="int">Location ID</th>
+                    <th scope="col" data-sort="string">Review Applicant's Report</th>
+                    <th scope="col" data-sort="int">Date &amp; Time Started</th>
+                    <th scope="col" data-sort="string">Status</th>
+                    <th scope="col" data-sort="string">Date &amp; Time Completed</th>
+                    <th scope="col" data-sort="string">Score</th>
+                    <th scope="col" data-sort="string">Launch Method</th>
+                    <th scope="col" data-sort="string">Renotify</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="location-id">1248790</td>
+                    <td class="applicant-name"><a href="#"><span class="has-tip tip-right" title="Click to view report.">McCalister, Robin</span></a></td>
+                    <td class="date-started">10/10/2000 2:27:16 PM</td>
+                    <td class="status started">Started</td>
+                    <td class="date-completed">In Process</td>
+                    <td class="score lower">Lower</td>
+                    <td class="launch-method"><a href="#"><span class="has-tip tip-left" title="robin.mccalister@emailaddress.com">Email</span></a></td>
+                    <td class="renotify">N/A</td>
+                  </tr>
+                  <tr>
+                    <td class="location-id">54544</td>
+                    <td class="applicant-name"><a href="#"><span class="has-tip tip-right" title="Click to view report.">Watson, Sam</span></a></td>
+                    <td class="date-started">12/1/2010 12:27:16 AM</td>
+                    <td class="status completed">Completed</td>
+                    <td class="date-completed">In Process</td>
+                    <td class="score upper">Upper</td>
+                    <td class="launch-method">Now</td>
+                    <td class="renotify">N/A</td>
+                  </tr>
+                  <tr>
+                    <td class="location-id">7273752</td>
+                    <td class="applicant-name"><a href="#"><span class="has-tip tip-right" title="Click to view report.">Bridget</span></a></td>
+                    <td class="date-started">7/2/2012 8:27:16 PM</td>
+                    <td class="status started">Started</td>
+                    <td class="date-completed">10/10/2000 2:27:16 PM</td>
+                    <td class="score middle">Middle</td>
+                    <td class="launch-method"><a href="#"><span class="has-tip tip-left" title="robin.mccalister@emailaddress.com">Email</span></a></td>
+                    <td class="renotify"><a href="#"><span class="has-tip tip-left" title="Click to re-notify.">Re-notify</span></a></td>
+                  </tr>
+                  <tr>
+                    <td class="location-id">1248790</td>
+                    <td class="applicant-name"><a href="#"><span class="has-tip tip-right" title="Click to view report.">McCalister, Robin</span></a></td>
+                    <td class="date-started">10/10/2000 2:27:16 PM</td>
+                    <td class="status started">Started</td>
+                    <td class="date-completed">In Process</td>
+                    <td class="score lower">Lower</td>
+                    <td class="launch-method"><a href="#"><span class="has-tip tip-left" title="robin.mccalister@emailaddress.com">Email</span></a></td>
+                    <td class="renotify">N/A</td>
+                  </tr>
+                  <tr>
+                    <td class="location-id">54544</td>
+                    <td class="applicant-name"><a href="#"><span class="has-tip tip-right" title="Click to view report.">Watson, Sam</span></a></td>
+                    <td class="date-started">12/1/2010 12:27:16 AM</td>
+                    <td class="status completed">Completed</td>
+                    <td class="date-completed">In Process</td>
+                    <td class="score upper">Upper</td>
+                    <td class="launch-method">Now</td>
+                    <td class="renotify">N/A</td>
+                  </tr>
+                  <tr>
+                    <td class="location-id">7273752</td>
+                    <td class="applicant-name"><a href="#"><span class="has-tip tip-right" title="Click to view report.">Bridget</span></a></td>
+                    <td class="date-started">7/2/2012 8:27:16 PM</td>
+                    <td class="status started">Started</td>
+                    <td class="date-completed">10/10/2000 2:27:16 PM</td>
+                    <td class="score middle">Middle</td>
+                    <td class="launch-method"><a href="#"><span class="has-tip tip-left" title="robin.mccalister@emailaddress.com">Email</span></a></td>
+                    <td class="renotify"><a href="#"><span class="has-tip tip-left" title="Click to re-notify.">Re-notify</span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="#">Print Activity History</a>
+            </div>
+          </div>
         </article>
       </div>
     </div><!-- .row.page-content -->
@@ -160,15 +251,6 @@
     </div><!-- .row -->
   </div><!-- #legal -->
 
-  <div class="click-share">
-    <a class="handle" href="#">Click &amp; Share</a>
-    <div class="addthis_toolbox">
-      <a class="addthis_button_facebook_like" fb:like:layout="box_count"></a>
-      <a class="addthis_button_tweet" tw:count="vertical"></a>
-      <a class="addthis_button_google_plusone" g:plusone:size="tall"></a>
-    </div>
-  </div>
-
   <script src="/javascripts/foundation/jquery.js"></script>
   <script src="/javascripts/foundation/jquery.cookie.js"></script>
   <script src="/javascripts/foundation/jquery.event.move.js"></script>
@@ -188,9 +270,8 @@
   <script src="/javascripts/foundation/jquery.foundation.tooltips.js"></script>
   <script src="/javascripts/foundation/jquery.foundation.topbar.js"></script>
   <script src="/javascripts/foundation/jquery.placeholder.js"></script>
-  <script src="/javascripts/jquery.tabSlideOut.v1.3.js"></script>
-  <script src="/javascripts/public.js"></script>
-  <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50e958302d5baa49&domready=1" defer="defer"></script>
+  <script src="/javascripts/stupidtable.js"></script>
+  <script src="/javascripts/foundation/app.js"></script>
 
 </body>
 </html>
