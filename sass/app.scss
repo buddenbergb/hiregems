@@ -85,6 +85,9 @@ body.internal { background: $white url(../images/internal-bg.png) 0 0 repeat-x; 
 .page-content strong { color: $black; }
 .page-content a { color: $secondaryColor; font-weight: bold; }
 
+body.private.internal .page-content article { padding: 0; }
+body.private.internal .sub-title { margin-bottom: 0; }
+
 
 // Ads
 h4 + .ad { position: relative; margin-top: -14px; }
@@ -104,7 +107,7 @@ h4 + .ad { position: relative; margin-top: -14px; }
 // Button styles
 .button.glass { background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #f6f6f6, vertical); @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%)); @include box-shadow( rgba(106, 159, 189, 0.7) 0 0 5px inset, rgba(0, 0, 0, 0.5) 0 2px 5px); border-width: 0; color: $txtColor; @include text-shadow(0px 1px 0px $white); }
 .button.glass:hover { @include box-shadow( rgba(255, 255, 255, 1) 0 0 5px inset, rgba(0, 0, 0, 0.7) 0 2px 5px); color: $black; }
-
+.small.button.yellow { font-size: 1.1em; background: rgba($highlightColor, 0.3); border: 0; color: $highlightColor; }
 
 // Panel overrides
 .panel { background-color: rgba($highlightColor, 0.3); color: $mainColor; }
@@ -128,7 +131,6 @@ aside .widget { margin-bottom: 30px; }
 .widget a { font-weight: bold; color: $secondaryColor; }
 .widget p { font-size: .9em; line-height: 1.3em; font-style: normal; }
 .widget h4 { padding: 0 0 14px; border-bottom: 1px dotted rgba(0, 0, 0, 0.2); background: transparent; font-size: 1.3em; }
-.widget .button { background: rgba($highlightColor, 0.3); color: $highlightColor; border: 0; }
 
 .widget div.orbit-wrapper div.slider-nav {}
 .widget div.orbit-wrapper div.slider-nav span { width: 7px; height: 11px; background: transparent url(../images/orbit-nav-sprite.png) -30px -395px no-repeat; top: -20px; }
@@ -155,6 +157,7 @@ header { padding-top: 14px; }
 .user-menu a { display: block; padding: 11px 6px 9px; width: 90px; font-size: .85em; text-transform: uppercase; color: $secondaryColor; }
 .user-menu i { display: block; font-size: 1.4em; line-height: 1.1em; font-style: normal; }
 .user-menu .divider { height: 34px; width: 2px; background: #DDD; border-right: 1px solid white; margin: 11px 0 0; }
+.user-menu .active { position: relative; color: $mainColor; @include text-shadow(0px 1px 0px rgba(255, 255, 255, 1)); }
 
 #account-credits a { width: 110px; }
 
@@ -269,12 +272,13 @@ body#contact-us .dropdown { margin-bottom: 16px; }
 
 
 // My Account
+.menu-title { padding: 8px 12px; background: $highlightColor; color: $mainColor; }
 #account-menu li { margin: 0; }
-#account-menu a { position: relative; background: #eee; font-size: .825em; line-height: 3.5em; padding-left: 23px; }
-#account-menu a:after { left: 5%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(161, 64, 55, 0); border-left-color: #a14037; border-width: 5px; top: 50%; margin-top: -5px; }
+#account-menu a { position: relative; background: #eee; font-size: .825em; line-height: 3.5em; padding-left: 23px; color:  $txtColor; }
+#account-menu a:after { left: 12px; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(161, 64, 55, 0); border-left-color: #a14037; border-width: 5px; top: 50%; margin-top: -5px; }
 
 #account-menu a:hover, 
-#account-menu li.active a { background: #f9f9f9; }
+#account-menu li.active a { background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #f6f6f6, vertical); @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%)); color: $mainColor; @include text-shadow(0px 1px 0px $white); }
 
 
 // Account Information
@@ -282,3 +286,19 @@ body#contact-us .dropdown { margin-bottom: 16px; }
 .card-type.visa { background-position: 0 0; }
 
 h4 + table { margin-top: -14px; @include border-radius(0 0 3px 3px); }
+
+
+// My Credits
+#credit-tiles {  }
+.block a { margin: 3px 6px 9px; padding: 10px 0; @include border-radius(10px); border: 3px solid #eee; text-align: center; }
+.block * { display: block; clear: both; width: auto; margin: 0 auto; line-height: 1.1em; }
+.block .credit-qty { font-size: 2.2em; font-weight: bold; }
+.block big { font-weight: normal; color: $txtColor; }
+.block .button { max-width: 70px; margin: 10px auto 5px; }
+.block a:hover { border-color: $highlightColor; }
+
+#custom-credits { background: #eee; @include border-radius(5px); padding: 10px; }
+#custom-credits .one.column { display: inline-block; padding: 0; width: 1.33333%; line-height: 2.1em; }
+#custom-credits input { margin-bottom: 0; }
+
+#promo-codes strong { line-height: 2.4em; }
