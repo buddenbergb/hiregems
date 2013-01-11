@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/stylesheets/app.css">
   <script src="/javascripts/foundation/modernizr.foundation.js"></script>
 </head>
-<body id="my-credits" class="private internal">
+<body id="newsletter-subscriptions" class="private internal">
   <header>
     <div id="brand">
       <div class="row">
@@ -25,8 +25,8 @@
           </ul>
           <nav id="account-credits" class="user-menu">
             <ul class="right">
-              <li id="credit-count"><a href="/my-account/my-credits/" class="active"><i class="icon-credit-count">2</i> My Credits</a></li> <li class="divider"></li>
-              <li id="my-account-link"><a href="/my-account/"><i class="icon-user"></i> My Account</a></li> <li class="divider"></li>
+              <li id="credit-count"><a href="/my-account/my-credits/"><i class="icon-credit-count">2</i> My Credits</a></li> <li class="divider"></li>
+              <li id="my-account-link"><a href="/my-account/" class="active"><i class="icon-user"></i> My Account</a></li> <li class="divider"></li>
               <li id="buy-credits-link"><a href="/my-account/my-credits/"><i class="icon-credits"></i> Buy Credits</a></li> <li class="divider"></li>
               <li id="logout-link"><a href="#?logout"><i class="icon-logout"></i> Log Out</a></li>
             </ul><!-- #account-credits -->
@@ -62,7 +62,7 @@
       <div class="twelve columns">
         <hgroup>
           <h2 class="page-title">My Account</h2>
-          <h3 class="sub-title">My Credits</h3>
+          <h3 class="sub-title">Newsletter Subscriptions</h3>
         </hgroup>
         <article>
           <nav id="account-menu" class="three columns">
@@ -70,144 +70,48 @@
               <li class="menu-title"><strong>Welcome, Joseph!</strong></li>
               <li class="divider"></li>
               <li><a href="/my-account/account-information/">Account Information</a></li> <li class="divider"></li>
-              <li class="active"><a href="/my-account/my-credits/">My Credits</a></li> <li class="divider"></li>
+              <li><a href="/my-account/my-credits/">My Credits</a></li> <li class="divider"></li>
               <li><a href="/my-account/activity-history/">Activity History</a></li> <li class="divider"></li>
               <li><a href="/my-account/billing-history/">Billing History</a></li> <li class="divider"></li>
-              <li><a href="/my-account/newsletter-subscriptions/">Newsletter Subscriptions</a></li> <li class="divider"></li>
+              <li class="active"><a href="/my-account/newsletter-subscriptions/">Newsletter Subscriptions</a></li> <li class="divider"></li>
             </ul>
           </nav>
-          <form class="nine columns custom">
-            <h4>Your Current Balance: 6 Credits</h4>
-            <h5>Buy Prepaid Credits to Begin Launches</h5>
-            <ul id="credit-tiles" class="block-grid four-up mobile">
-              <li class="block">
-                <a href="#">
-                  <span class="credit-qty">5</span>
-                  <big>Credits</big>
-                  <strong>$5.00</strong>
-                  <span class="small radius button yellow">BUY</span>
-                </a>
-              </li>
-              <li class="block">
-                <a href="#">
-                  <span class="credit-qty">10</span>
-                  <big>Credits</big>
-                  <strong>$10.00</strong>
-                  <span class="small radius button yellow">BUY</span>
-                </a>
-              </li>
-              <li class="block">
-                <a href="#">
-                  <span class="credit-qty">20</span>
-                  <big>Credits</big>
-                  <strong>$20.00</strong>
-                  <span class="small radius button yellow">BUY</span>
-                </a>
-              </li>
-              <li class="block">
-                <a href="#">
-                  <span class="credit-qty">40</span>
-                  <big>Credits</big>
-                  <strong>$40.00</strong>
-                  <span class="small radius button yellow">BUY</span>
-                </a>
-              </li>
-              <li class="block">
-                <a href="#">
-                  <span class="credit-qty">50</span>
-                  <big>Credits</big>
-                  <strong>$50.00</strong>
-                  <span class="small radius button yellow">BUY</span>
-                </a>
-              </li>
-              <li class="block">
-                <a href="#">
-                  <span class="credit-qty">100</span>
-                  <big>Credits</big>
-                  <strong>$100.00</strong>
-                  <span class="small radius button yellow">BUY</span>
-                </a>
-              </li>
-              <li class="block">
-                <a href="#">
-                  <span class="credit-qty">150</span>
-                  <big>Credits</big>
-                  <strong>$150.00</strong>
-                  <span class="small radius button yellow">BUY</span>
-                </a>
-              </li>
-              <li class="block">
-                <a href="#">
-                  <span class="credit-qty">200</span>
-                  <big>Credits</big>
-                  <strong>$200.00</strong>
-                  <span class="small radius button yellow">BUY</span>
-                </a>
-              </li>
-            </ul>
-            <p><strong>Need A Different Size Credit Pack?</strong><br />There is a mimumum purchase of $5:00. Please enter your amount below.</p>
-            <p><strong style="color:darkred;">The current price per credit = $1.00</strong></p>
-            <div id="custom-credits">
-              <div class="row">
-                <div class="three columns">
-                  <div class="row collapse">
-                    <div class="six mobile-one columns">
-                      <span class="prefix">Credits:</span>
-                    </div>
-                    <div class="six mobile-three columns">
-                      <input type="text" />
-                    </div>
-                  </div>
-                </div>
-                <strong class="one column">=</strong>
-                <div class="three columns">
-                  <div class="row collapse">
-                    <div class="six mobile-one columns">
-                      <span class="prefix">Dollars:</span>
-                    </div>
-                    <div class="six mobile-three columns">
-                      <input type="text" />
-                    </div>
-                  </div>
-                </div>
-                <input type="submit" class="small radius button yellow" value="BUY" />
-              </div>
-            </div>
-            <h4>Promotions</h4>
-            <div id="promo-codes">
-              <div class="row">
-                <div class="twelve columns">
-                  <div class="row">
-                    <div class="three mobile-one columns">
-                      <label name="promo-code"><strong>Enter Promo Code</strong></label>
-                    </div>
-                    <div class="seven mobile-three columns">
-                      <input type="text" id="promo-code" />
-                    </div>
-                    <div class="two mobile-three columns">
-                      <input type="submit" class="small radius button yellow" value="REDEEM" />
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            <h4>Terms &amp; Conditions</h4>
-            <div class="row">
-              <div class="twelve columns">
-                <p>Ownership and Right to Make Changes<br />
-                hireGEMS™ is an online service owned and operated by HRgems, Inc. who has the right, without notice, to change the look, feel, format of the website, any and all fees and prices charged or collected for credits to be used toward service and for services delivered; </p>
-                <p>Scope of Use and User Email: email addresses are not used in marketing lists and are maintained in the program;</p>
-                <p>Intellectual Property<br />
-                The materials on the hireGEMS™ site are copyrighted and protected by all United States and international copyright laws and unlawful copying will be considered infringement; </p>
-                <p>No Warranties<br />
-                The hireGEMS™ website is provided “as is” and contains no express, statutory or implied warranties;</p>
-                <p>Fees for Credits<br />
-                Credits are purchased and used to launch services at the time of purchase or at a later date.  Sales of all credits are final, non-refundable and with the sole purpose and value to launch hireGEMS™ services;</p>
-                <p>Use of Credits<br />
-                A Credit is spent and deducted from the My Credit number of credits at the time a service is launched. This occurs before it is completed by an applicant or third party for launches on the iPad or tablet or device and before it is completed by an applicant or third party for launches to an email address.</p>
-              </div>
-            </div>
+          <form id="subscription-form" class="nine columns custom">
+            <h4>Current Subscriptions</h4>
+            <table class="twelve">
+              <tbody>
+                <tr>
+                  <td><strong>First Name</strong></td>
+                  <td>Jonathan</td>
+                </tr>
+                <tr>
+                  <td><strong>Last Name</strong></td>
+                  <td>Dickenson</td>
+                </tr>
+                <tr>
+                  <td><strong>Email Address</strong></td>
+                  <td>joesmith@email.com</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Add Email Address</h4>
+            <table class="twelve">
+              <tbody>
+                <tr>
+                  <td><label for="news-first-name"><strong>First Name<span class="required">*</span></strong></label></td>
+                  <td><input type="text" id="news-first-name" class="seven" placeholder="Jonathan" /></td>
+                </tr>
+                <tr>
+                  <td><label for="news-last-name"><strong>Last Name<span class="required">*</span></strong></label></td>
+                  <td><input type="text" id="news-last-name" class="seven" placeholder="Dickenson" /></td>
+                </tr>
+                <tr>
+                  <td><label for="news-email"><strong>Email Address<span class="required">*</span></strong></label></td>
+                  <td><input type="text" id="news-email" class="seven" placeholder="jonathan@dickenson.com" /></td>
+                </tr>
+              </tbody>
+            </table>
+            <div><input type="submit" class="small radius button yellow right" name="save" value="SAVE" /></div>
           </form>
         </article>
       </div>
