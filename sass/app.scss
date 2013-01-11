@@ -88,7 +88,7 @@ h4 + .ad { position: relative; margin-top: -14px; }
 
 
 // Click Share
-.click-share { width: 75px; background: $white; }
+.click-share { width: 75px; background: $white; z-index: 50; }
 .addthis_toolbox { height: 218px; padding: 10px; border-top: 1px solid #b1b1b1; border-bottom: 1px solid #b1b1b1; }
 
 
@@ -129,19 +129,24 @@ aside .widget { margin-bottom: 30px; }
 // Header
 header { padding-top: 14px; }
 #brand { background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #d1d1d1, vertical); @include background-image(linear-gradient(top, rgba(255,255,255,1) 0%,rgba(209,209,209,1) 100%)); }
-.name { margin: 10px 0 0; }
+.name { margin: 10px 0; }
 
-#login-register { margin-top: 15px; }
-#login-register a { @include box-shadow( rgba(0, 0, 0, 0.4) 0 0 7px inset ); border: 0; padding: 7px 21px; font-size: .9em; font-weight: 400; text-transform: uppercase; }
-#login-link a { background: #d0a82e; color: $white; }
-#register-link a { background: #f7f7f7; color: $black; }
+#support-links { margin-bottom: 10px; }
+#support-links li { margin-left: 15px; margin-top: 10px; font-size: .95em; }
+#support-links a { font-weight: bold; color: $txtColor; font-size: .95em; }
+#support-links i { color: $txtColor; font-size: 1em; }
 
-#account-credits a { display: block; font-size: .85em; text-transform: uppercase; text-align: center; color: $secondaryColor; }
-#account-credits i { display: block; clear: both; color: $txtColor; }
-#account-credits a:hover,
-#account-credits a:hover i { color: $mainColor; }
-#account-credits .divider { width: 2px; background: #ccc; height: 12px; margin: 0; margin-left: 14px; margin-right: -8px; margin-top: 22px; }
+.user-menu ul { list-style: none; margin: 0; border: 1px solid #f1f1f1; @include border-radius(5px); @include box-shadow( rgba(0, 0, 0, 0.4) 0 0 7px inset ); background: #f7f7f7; }
+.user-menu li { float: left; text-align: center; }
+.user-menu a { display: block; padding: 11px 6px 9px; width: 90px; font-size: .85em; text-transform: uppercase; color: $secondaryColor; }
+.user-menu i { display: block; font-size: 1.4em; line-height: 1.1em; }
+.user-menu .divider { height: 34px; width: 2px; background: #DDD; border-right: 1px solid white; margin: 11px 0 0; }
 
+#account-credits a { width: 110px; }
+/*
+#register-link a {  border-right: 1px solid #f9f9f9; }
+#login-link a { border-left: 1px solid #ddd; }
+*/
 
 // Primary Nav / Top Bar
 .top-bar { background-color: rgb(46,38,33); @include filter-gradient(#2e2621, #110f0e, vertical); @include background-image(linear-gradient(top, rgba(46,38,33,1) 0%,rgba(79,73,68,1) 95%,rgba(17,15,14,1) 100%)); }
