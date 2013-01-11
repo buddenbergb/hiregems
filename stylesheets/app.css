@@ -7020,13 +7020,13 @@ h4 + table {
 }
 
 /* line 307, ../sass/app.scss */
-#history-table {
+body.private table {
   margin-top: 17px;
 }
 
 /* line 309, ../sass/app.scss */
-#history-table th,
-#history-table td {
+body.private table th,
+body.private table td {
   font-size: .8em;
   width: 12.25%;
 }
@@ -7034,4 +7034,18 @@ h4 + table {
 /* line 310, ../sass/app.scss */
 th[data-sort] {
   cursor: pointer;
+}
+
+/* line 311, ../sass/app.scss */
+th .arrow {
+  float: right;
+  font-weight: bold;
+  color: maroon;
+  font-size: 1.3em;
+  margin-top: -3px;
+}
+
+/* line 312, ../sass/app.scss */
+th[class*='sorting-'] {
+  background-color: #ddd;
 }

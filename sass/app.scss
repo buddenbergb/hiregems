@@ -304,7 +304,9 @@ h4 + table { margin-top: -14px; @include border-radius(0 0 3px 3px); }
 
 
 // Activity History
-#history-table { margin-top: 17px; }
-#history-table th,
-#history-table td { font-size: .8em; width: 12.25%; }
+body.private table { margin-top: 17px; }
+body.private table th,
+body.private table td { font-size: .8em; width: 12.25%; }
 th[data-sort]{ cursor: pointer; }
+th .arrow { float: right; font-weight: bold; color: maroon; font-size: 1.3em; margin-top: -3px; }
+th[class*='sorting-'] { background-color: #ddd; }
