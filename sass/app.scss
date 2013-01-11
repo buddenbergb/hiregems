@@ -105,6 +105,10 @@ h4 + .ad { position: relative; margin-top: -14px; }
 .panel { background-color: rgba($highlightColor, 0.3); color: $mainColor; }
 
 
+// Alert Box overrides
+.alert-box.info { padding: 10px 15px 0; background: rgba($highlightColor, 0.1); color: $mainColor; @include text-shadow(none); }
+
+
 // Orbit overrides
 ul.orbit-bullets li { width: 15px; height: 15px; margin-left: 10px; background-image: none; background-color: $highlightColor; @include border-radius(50%); border: 1px solid #ba9d40; opacity: 0.3; }
 ul.orbit-bullets li.active { opacity: 1; }
