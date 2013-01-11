@@ -143,10 +143,6 @@ header { padding-top: 14px; }
 .user-menu .divider { height: 34px; width: 2px; background: #DDD; border-right: 1px solid white; margin: 11px 0 0; }
 
 #account-credits a { width: 110px; }
-/*
-#register-link a {  border-right: 1px solid #f9f9f9; }
-#login-link a { border-left: 1px solid #ddd; }
-*/
 
 // Primary Nav / Top Bar
 .top-bar { background-color: rgb(46,38,33); @include filter-gradient(#2e2621, #110f0e, vertical); @include background-image(linear-gradient(top, rgba(46,38,33,1) 0%,rgba(79,73,68,1) 95%,rgba(17,15,14,1) 100%)); }
