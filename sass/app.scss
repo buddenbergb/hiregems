@@ -61,11 +61,16 @@ p + h4 { margin-top: 42px; }
 
 // Forms
 form .required { color: $secondaryColor; }
-.page-content input[type=text],
-.page-content input[type=email],
-.page-content input[type=tel],
-.page-content input[type=password],
-.page-content textarea { margin: 8px 0 16px; padding: 6px 8px; background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #f6f6f6, vertical); @include background-image(linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%)); @include box-shadow( rgba(0, 0, 0, 0.4) 0 1px 4px, rgba(255, 255, 255, 1) 0 1px 0 inset ); border: 1px solid $white; }
+body.public .page-content input[type=text],
+body.public .page-content input[type=email],
+body.public .page-content input[type=tel],
+body.public .page-content input[type=password],
+body.public .page-content textarea { margin: 8px 0 16px; padding: 6px 8px; background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #f6f6f6, vertical); @include background-image(linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 100%)); @include box-shadow( rgba(0, 0, 0, 0.4) 0 1px 4px, rgba(255, 255, 255, 1) 0 1px 0 inset ); border: 1px solid $white; }
+
+form.custom div.custom.dropdown,
+table input[type="text"], table input[type="password"], table input[type="date"], table input[type="datetime"], table input[type="email"], table input[type="number"], table input[type="search"], table input[type="tel"], table input[type="time"], table input[type="url"], table textarea { margin-bottom: 0; line-height: inherit; }
+
+tr td:first-child label strong { line-height: 2.1em; }
 
 
 // Internal
@@ -154,6 +159,7 @@ header { padding-top: 14px; }
 #account-credits a { width: 110px; }
 
 body.public #account-credits { display: none; }
+body.private #login-register { display: none; }
 
 // Primary Nav / Top Bar
 .top-bar { background-color: rgb(46,38,33); @include filter-gradient(#2e2621, #110f0e, vertical); @include background-image(linear-gradient(top, rgba(46,38,33,1) 0%,rgba(79,73,68,1) 95%,rgba(17,15,14,1) 100%)); }
@@ -260,3 +266,19 @@ body#services .ad-content { width: 40%; padding: 0 0 30px 60px; float: left; lin
 
 // Contact Us
 body#contact-us .dropdown { margin-bottom: 16px; }
+
+
+// My Account
+#account-menu li { margin: 0; }
+#account-menu a { position: relative; background: #eee; font-size: .825em; line-height: 3.5em; padding-left: 23px; }
+#account-menu a:after { left: 5%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(161, 64, 55, 0); border-left-color: #a14037; border-width: 5px; top: 50%; margin-top: -5px; }
+
+#account-menu a:hover, 
+#account-menu li.active a { background: #f9f9f9; }
+
+
+// Account Information
+.card-type { display: inline-block; width: 32px; height: 20px; text-indent: -999em; background: url(../images/visa-logo.png) no-repeat; }
+.card-type.visa { background-position: 0 0; }
+
+h4 + table { margin-top: -14px; @include border-radius(0 0 3px 3px); }

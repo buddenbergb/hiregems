@@ -102,7 +102,7 @@ $(document).ready(function() {
 
   $('.click-share').tabSlideOut({
       tabHandle: '.handle',
-      pathToTabImage: '../images/click-share.png',
+      pathToTabImage: '/images/click-share.png',
       imageHeight: '218px',
       imageWidth: '50px',
       tabLocation: 'right',

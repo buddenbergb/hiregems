@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Foundation</title>
+  <link rel="stylesheet" href="/stylesheets/app.css">
+  <script src="/javascripts/foundation/modernizr.foundation.js"></script>
+</head>
+<body id="account-information" class="private internal">
+  <header>
+    <div id="brand">
+      <div class="row">
+        <h1 class="two columns name">
+          <a href="/" title="hireGEMS">
+            <img src="/images/logo.png" />
+          </a>
+        </h1>
+        <div class="six columns offset-by-four">
+          <ul id="support-links" class="inline-list right">
+            <li>Support:</li>
+            <li><a href="mailto:info@hiregems.com"><i class="icon-mail"></i> Email Us</a></li>
+            <li><a href="tel:888-555-1234"><i class="icon-phone"></i> Call Us Toll Free</a></li>
+          </ul>
+          <nav id="account-credits" class="user-menu">
+            <ul class="right">
+              <li id="credit-count"><a href="/my-account/my-credits/"><i class="icon-credit-count">2</i> My Credits</a></li> <li class="divider"></li>
+              <li id="my-account-link"><a href="/my-account/"><i class="icon-user"></i> My Account</a></li> <li class="divider"></li>
+              <li id="buy-credits-link"><a href="/my-account/my-credits/"><i class="icon-credits"></i> Buy Credits</a></li> <li class="divider"></li>
+              <li id="logout-link"><a href="#?logout"><i class="icon-logout"></i> Log Out</a></li>
+            </ul><!-- #account-credits -->
+          </nav>
+          <nav id="login-register" class="user-menu">
+            <ul class="right">
+              <li id="register-link"><a href="/login/"><i class="icon-key"></i> Register</a></li> <li class="divider"></li>
+              <li id="login-link"><a href="/login/"><i class="icon-login"></i> Log In</a></li>
+            </ul><!-- #login-register -->
+          </nav>
+        </div>
+      </div><!-- .row -->
+    </div><!-- #brand -->
+    <nav class="top-bar">
+      <div class="row">
+        <div class="twelve columns">
+          <ul class="left">
+            <li class="divider"></li>
+            <li id="nav-home"><a href="/">Home</a></li> <li class="divider"></li>
+            <li id="nav-what-we-do"><a href="/what-we-do/">What We Do</a></li> <li class="divider"></li>
+            <li id="nav-begin-launches"><a href="/begin-launches/">Begin Launches</a></li> <li class="divider"></li>
+            <li id="nav-services"><a href="/services/">Services</a></li> <li class="divider"></li>
+            <li id="nav-faq"><a href="/faq/">FAQ</a></li> <li class="divider"></li>
+            <li id="nav-contact-us"><a href="/contact-us/">Contact Us</a></li> <li class="divider"></li>
+            <li class="toggle-topbar"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div id="main" role="main">
+    <div class="row page-content">
+      <div class="twelve columns">
+        <hgroup>
+          <h2 class="page-title">My Account</h2>
+          <h3 class="sub-title">Account Information</h3>
+        </hgroup>
+        <article>
+          <nav id="account-menu" class="three columns">
+            <ul class="side-nav">
+              <li class="divider"></li>
+              <li class="active"><a href="/my-account/account-information/">Account Information</a></li> <li class="divider"></li>
+              <li><a href="/my-account/my-credits/">My Credits</a></li> <li class="divider"></li>
+              <li><a href="/my-account/activity-history/">Activity History</a></li> <li class="divider"></li>
+              <li><a href="/my-account/billing-history/">Billing History</a></li> <li class="divider"></li>
+              <li><a href="/my-account/newsletter-subscriptions/">Newsletter Subscriptions</a></li> <li class="divider"></li>
+            </ul>
+          </nav>
+          <form class="nine columns custom">
+            <h4>Current Account Information</h4>
+            <table class="twelve">
+              <tbody>
+                <tr>
+                  <td width="30%"><strong>Account Type</strong></td>
+                  <td width="70%">National Account</td>
+                </tr>
+                <tr>
+                  <td width="30%"><strong>Location ID</strong></td>
+                  <td width="70%">198749871643</td>
+                </tr>
+                <tr>
+                  <td width="30%"><strong>Email Address</strong></td>
+                  <td width="70%">joesmith@email.com</td>
+                </tr>
+                <tr>
+                  <td width="30%"><strong>First Name</strong></td>
+                  <td width="70%">Joseph</td>
+                </tr>
+                <tr>
+                  <td width="30%"><strong>Last Name</strong></td>
+                  <td width="70%">Smith</td>
+                </tr>
+                <tr>
+                  <td width="30%"><strong>Phone</strong></td>
+                  <td width="70%">(540) 672-0049</td>
+                </tr>
+                <tr>
+                  <td width="30%"><strong>Card Number</strong></td>
+                  <td width="70%">**** **** **** 2013<span class="card-type visa right"></span></td>
+                </tr>
+                <tr>
+                  <td width="30%"><strong>Cardholder's Name</strong></td>
+                  <td width="70%">Joseph Smitheson</td>
+                </tr>
+                <tr>
+                  <td width="30%"><strong>Billing Address</strong></td>
+                  <td width="70%">
+                    19101 Address Street Way<br />
+                    Somecity, California 90101
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Edit Your Login Information</h4>
+            <table class="twelve">
+              <tbody>
+                <tr>
+                  <td width="30%"><label for="login-type"><strong>Account Type</strong></label></td>
+                  <td width="70%">
+                    <select style="display:none;" id="login-type">
+                      <option SELECTED>National Account</option>
+                      <option>This is another option</option>
+                      <option>Look, a third option</option>
+                    </select>
+                    <div class="custom dropdown">
+                      <a href="#" class="current">National Account</a>
+                      <a href="#" class="selector"></a>
+                      <ul>
+                        <li>National Account</li>
+                        <li>This is another option</li>
+                        <li>Look, a third option</li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="30%"><label for="location-id"><strong>Location ID</strong></label></td>
+                  <td width="70%"><input type="number" id="location-id" class="seven" placeholder="289273" /></td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Edit Your Account Information</h4>
+            <table class="twelve">
+              <tbody>
+                <tr>
+                  <td width="30%"><label for="first-name"><strong>First Name</strong></label></td>
+                  <td width="70%"><input type="text" id="first-name" class="seven" placeholder="Joe" /></td>
+                </tr>
+                <tr>
+                  <td width="30%"><label for="last-name"><strong>Last Name</strong></label></td>
+                  <td width="70%"><input type="text" id="last-name" class="seven" placeholder="Smith" /></td>
+                </tr>
+                <tr>
+                  <td width="30%"><label for="phone"><strong>Phone</strong></label></td>
+                  <td width="70%"><input type="tel" id="phone" class="seven" placeholder="(201) 201-0121" /></td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Edit Your Debit or Credit Card Information</h4>
+            <table class="twelve">
+              <tbody>
+                <tr>
+                  <td width="30%"><label for="card-number"><strong>Card Number</strong></label></td>
+                  <td width="70%"><input type="text" id="card-number" class="seven" placeholder="**** **** **** 2013" /></td>
+                </tr>
+                <tr>
+                  <td width="30%"><label for="card-name"><strong>Cardholder's Name</strong></label></td>
+                  <td width="70%"><input type="text" id="card-name" class="seven" placeholder="Joseph Brosmith" /></td>
+                </tr>
+                <tr>
+                  <td width="30%"><label for="card-exp"><strong>Expiration Date</strong></label></td>
+                  <td width="70%">
+                    <div class="row">
+                      <div class="four columns">
+                        <input type="text" size="4" placeholder="January" />
+                        <div><small>Month</small></div>
+                      </div>
+                      <div class="four columns left" style="float: left;">
+                        <input type="number" size="3" placeholder="2013" />
+                        <div><small>Year</small></div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Edit Your Billing Address</h4>
+            <table class="twelve">
+              <tbody>
+                <tr>
+                  <td width="30%"><label for="first-name"><strong>Street</strong></label></td>
+                  <td width="70%"><input type="text" id="first-name" class="seven" placeholder="19101 Address Street Way" /></td>
+                </tr>
+                <tr>
+                  <td width="30%"><label for="last-name"><strong>City</strong></label></td>
+                  <td width="70%"><input type="text" id="last-name" class="seven" placeholder="Somecity" /></td>
+                </tr>
+                <tr>
+                  <td width="30%"><label for="billing-state"><strong>State</strong></label></td>
+                  <td width="70%">
+                    <div class="four columns" style="padding-left:0;">
+                      <select style="display:none;" id="billing-state">
+                        <option SELECTED>Alabama</option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                      <div class="custom dropdown" style="width:120px !important;">
+                        <a href="#" class="current">Alabama</a>
+                        <a href="#" class="selector"></a>
+                        <ul>
+                          <li>Alabama</li>
+                          <li></li>
+                          <li></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="three columns">
+                      <label for="zip"><strong style="line-height:2.5em;">Zip Code</strong></label>
+                    </div>
+                    <div class="four columns" style="float: left;">
+                      <input type="number" id="zip" placeholder="90101" />
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div><input type="submit" class="small radius button right" name="save" value="Save" /></div>
+          </form>
+        </article>
+      </div>
+    </div><!-- .row.page-content -->
+  </div><!-- #main -->
+  <footer id="colophon" class="cf">
+    <div class="twelve columns">
+      <div class="row">
+        <nav class="two columns">
+          <ul id="footer-nav" class="nav-bar vertical">
+            <li><a href="/">Home</a></li>
+            <li><a href="/what-we-do/">What We Do</a></li>
+            <li><a href="/begin-launches/">Begin Launches</a></li>
+            <li><a href="/services/">Services</a></li>
+            <li><a href="/faq/">FAQ</a></li>
+            <li><a href="/contact-us/">Contact Us</a></li>
+          </ul><!-- #footer-nav -->
+        </nav>
+        <div id="download-cta" class="four columns">
+          <div class="panel callout radius">
+            <h5>Download Mobile Application</h5>
+            <div class="row">
+              <div class="four columns">
+                <img src="/images/download-cta.png" />
+              </div>
+              <div class="eight columns">
+                <p>All the hireGEMS features and more on your tablet. Get the hireGEMS&trade; app for <span class="device-ipad">iPad&reg;</span> <span class="device-android">Android&reg;</span> tablet. </p>
+                <a class="small radius button glass" href="#">Download</a>
+              </div>
+            </div><!-- .row -->
+          </div>
+        </div><!-- #download-cta -->
+        <div class="four columns">
+          <h5>Sign Up for Our Newsletter</h5>
+          <form action="http://traitset.us6.list-manage1.com/subscribe/post?u=a75c75de3c298f467ca92608a&amp;id=27ad73383b" method="post" id="newsletter-signup" name="newsletter-signup" target="_blank" novalidate>
+            <div class="row">
+              <div class="two mobile-one columns">
+                <label class="right inline">Name:</label>
+              </div>
+              <div class="ten mobile-three columns">
+                <input type="text" class="eleven" name="FNAME" />
+              </div>
+            </div><!-- .row -->
+            <div class="row">
+              <div class="two mobile-one columns">
+                <label class="right inline">Email:</label>
+              </div>
+              <div class="ten mobile-three columns">
+                <input type="text" class="eleven" name="EMAIL" />
+              </div>
+            </div><!-- .row -->
+            <div class="row">
+              <div class="four mobile-three columns offset-by-two">
+                <input type="submit" class="small radius button glass" name="subscribe" value="Sign Up" />
+              </div>
+            </div><!-- .row -->
+          </form><!-- #newsletter-signup -->
+        </div>
+        <nav class="two columns">
+          <h5>Connect With Us</h5>
+          <ul id="social-nav" class="nav-bar vertical">
+            <li><a href="#"><i class="icon-facebook-circled"></i> Facebook</a></li>
+            <li><a href="#"><i class="icon-twitter-circled"></i> Twitter</a></li>
+            <li><a href="#"><i class="icon-linkedin-circled"></i> LinkedIn</a></li>
+            <li><a href="#"><i class="icon-play-circle2"></i> YouTube</a></li>
+          </ul><!-- #social-nav -->
+        </nav>
+      </div><!-- .row -->
+    </div>
+  </footer><!-- #colophon -->
+  <div id="legal">
+    <div class="row">
+      <div class="four columns">
+        <ul class="inline-list">
+          <li>Our Family of Brands:</li>
+          <li><a href="http://www.traitset.com">TraitSet&reg;</a></li> <li class="divider"></li>
+          <li><a href="http://www.hrgems.com">HR Gems</a></li>
+        </ul>
+      </div>
+      <div class="three columns offset-by-one">
+        <ul class="inline-list">
+          <li>Copyright 2013 HireGEMS</li>
+        </ul>
+      </div>
+      <div class="four columns">
+        <ul class="inline-list">
+          <li><a href="/site-map/">Site Map</a></li> <li class="divider"></li>
+          <li><a href="/privacy/">Privacy</a></li> <li class="divider"></li>
+          <li><a href="/security/">Security</a></li> <li class="divider"></li>
+          <li><a href="/terms-of-use/">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div><!-- .row -->
+  </div><!-- #legal -->
+
+  <div class="click-share">
+    <a class="handle" href="#">Click &amp; Share</a>
+    <div class="addthis_toolbox">
+      <a class="addthis_button_facebook_like" fb:like:layout="box_count"></a>
+      <a class="addthis_button_tweet" tw:count="vertical"></a>
+      <a class="addthis_button_google_plusone" g:plusone:size="tall"></a>
+    </div>
+  </div>
+
+  <script src="/javascripts/foundation/jquery.js"></script>
+  <script src="/javascripts/foundation/jquery.cookie.js"></script>
+  <script src="/javascripts/foundation/jquery.event.move.js"></script>
+  <script src="/javascripts/foundation/jquery.event.swipe.js"></script>
+  <script src="/javascripts/foundation/jquery.foundation.accordion.js"></script>
+  <script src="/javascripts/foundation/jquery.foundation.alerts.js"></script>
+  <script src="/javascripts/foundation/jquery.foundation.buttons.js"></script>
+  <script src="/javascripts/foundation/jquery.foundation.clearing.js"></script>
+  <script src="/javascripts/foundation/jquery.foundation.forms.js"></script>
+  <script src="/javascripts/foundation/jquery.foundation.joyride.js"></script>
+  <script src="/javascripts/foundation/jquery.foundation.magellan.js"></script>
+  <script src="/javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+  <script src="/javascripts/foundation/jquery.foundation.navigation.js"></script>
+  <script src="/javascripts/foundation/jquery.foundation.orbit.js"></script>
+  <script src="/javascripts/foundation/jquery.foundation.reveal.js"></script>
+  <script src="/javascripts/foundation/jquery.foundation.tabs.js"></script>
+  <script src="/javascripts/foundation/jquery.foundation.tooltips.js"></script>
+  <script src="/javascripts/foundation/jquery.foundation.topbar.js"></script>
+  <script src="/javascripts/foundation/jquery.placeholder.js"></script>
+  <script src="/javascripts/jquery.tabSlideOut.v1.3.js"></script>
+  <script src="/javascripts/foundation/app.js"></script>
+  <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50e958302d5baa49&domready=1" defer="defer"></script>
+
+</body>
+</html>
