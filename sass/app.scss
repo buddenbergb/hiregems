@@ -139,10 +139,12 @@ header { padding-top: 14px; }
 .user-menu ul { list-style: none; margin: 0; border: 1px solid #f1f1f1; @include border-radius(5px); @include box-shadow( rgba(0, 0, 0, 0.4) 0 0 7px inset ); background: #f7f7f7; }
 .user-menu li { float: left; text-align: center; }
 .user-menu a { display: block; padding: 11px 6px 9px; width: 90px; font-size: .85em; text-transform: uppercase; color: $secondaryColor; }
-.user-menu i { display: block; font-size: 1.4em; line-height: 1.1em; }
+.user-menu i { display: block; font-size: 1.4em; line-height: 1.1em; font-style: normal; }
 .user-menu .divider { height: 34px; width: 2px; background: #DDD; border-right: 1px solid white; margin: 11px 0 0; }
 
 #account-credits a { width: 110px; }
+
+body.public #account-credits { display: none; }
 
 // Primary Nav / Top Bar
 .top-bar { background-color: rgb(46,38,33); @include filter-gradient(#2e2621, #110f0e, vertical); @include background-image(linear-gradient(top, rgba(46,38,33,1) 0%,rgba(79,73,68,1) 95%,rgba(17,15,14,1) 100%)); }
