@@ -84,7 +84,7 @@
                 </div>
               </div>
               <div class="product-select">
-                <label for="base-applic-select"><input type="checkbox" id="base-applic-select" style="display: none;" REQUIRED><span class="custom checkbox"></span> Select This Launch</label>
+                <label for="base-applic-select"><input type="checkbox" id="base-applic-select" style="display: none;" required="required"><span class="custom checkbox"></span> Select This Launch</label>
               </div>
               <footer class="">
                 <div class="row">
@@ -95,9 +95,9 @@
                     <small>Decide if you want to “Launch Now” on your tablet or compuer or if you want to “Launch by Email” to the applicant with a link to complete it.</small>
                   </div>
                   <div class="four columns offset-by-one">
-                    <input type="submit" class="small radius button glass" name="app-launch-now" value="Launch Now" />
+                    <input type="submit" class="small radius button glass launch-now" name="app-launch-now" value="Launch Now" />
                     <span>OR</span>
-                    <input type="submit" class="small radius button glass" name="app-launch-by-email" value="Launch by Email" />
+                    <input type="submit" class="small radius button glass launch-email" name="app-launch-by-email" value="Launch by Email" />
                   </div>
                 </div>
               </footer>
@@ -696,6 +696,28 @@
       <a class="addthis_button_tweet" tw:count="vertical"></a>
       <a class="addthis_button_google_plusone" g:plusone:size="tall"></a>
     </div>
+  </div>
+
+  <div class="reveal-modal medium login-required">
+    <div class="alert-box alert">WARNING</div>
+    <div class="panel">
+      <p>You must be logged in to perform this action.</p>
+    </div>
+    <div class="five columns centered">
+      <a href="/login/" class="small radius button glass">Log In Now</a><span> or </span><a href="/login/">Register</a>
+    </div>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+
+  <div class="reveal-modal medium credits-required">
+    <div class="alert-box alert">WARNING</div>
+    <div class="panel">
+      <p>You need 6 more credits to perform this action.</p>
+    </div>
+    <div class="three columns centered">
+      <a href="/my-account/my-credits/" class="small radius button glass">Buy Credits</a>
+    </div>
+    <a class="close-reveal-modal">&#215;</a>
   </div>
 
   <script src="/javascripts/foundation/jquery.js"></script>

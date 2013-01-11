@@ -111,4 +111,20 @@ $(document).ready(function() {
       topPos: '200px',
       fixedPosition: true
   });
+
+  $('.launch-now').click(function() {
+    $('.login-required').reveal({
+      animation: 'fade',
+      animationSpeed: 200,
+      closeOnBackgroundClick: false
+    });
+  });
+  
+  $('.launch-email').click(function() {
+    $('.credits-required').reveal({
+      animation: 'fade',
+      animationSpeed: 200,
+      closeOnBackgroundClick: false
+    });
+  });
 });

@@ -96,17 +96,22 @@ h4 + .ad { position: relative; margin-top: -14px; }
 .top-bar { background-color: transparent; }
 
 
-// Panel overrides
-.panel.callout .button,
-.panel.callout .button:hover,
+// Button styles
 .button.glass { background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #f6f6f6, vertical); @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%)); @include box-shadow( rgba(106, 159, 189, 0.7) 0 0 5px inset, rgba(0, 0, 0, 0.5) 0 2px 5px); border-width: 0; color: $txtColor; @include text-shadow(0px 1px 0px $white); }
-.panel.callout .button:hover,
 .button.glass:hover { @include box-shadow( rgba(255, 255, 255, 1) 0 0 5px inset, rgba(0, 0, 0, 0.7) 0 2px 5px); color: $black; }
+
+
+// Panel overrides
+.panel { background-color: rgba($highlightColor, 0.3); color: $mainColor; }
 
 
 // Orbit overrides
 ul.orbit-bullets li { width: 15px; height: 15px; margin-left: 10px; background-image: none; background-color: $highlightColor; @include border-radius(50%); border: 1px solid #ba9d40; opacity: 0.3; }
 ul.orbit-bullets li.active { opacity: 1; }
+
+
+// Reveal overrides
+.reveal-modal { border-top: 10px solid $highlightColor; }
 
 
 // Widgets
