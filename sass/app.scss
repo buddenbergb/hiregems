@@ -214,7 +214,8 @@ body#home { background: $white url(../images/home-bg.png) 0 0 repeat-x; }
 
 #hero { background: $white; @include box-shadow( rgba(0, 0, 0, 0.3) 0 5px 10px); }
 #hero a { margin: 15px; }
-#hero-wrapper div.orbit-wrapper div.slider-nav span { width: 50px; height: 50px; @include border-radius(50%); background: transparent url(../images/orbit-nav-sprite.png) no-repeat; }
+#hero-wrapper { padding-bottom: 30px; background: $white; }
+#hero-wrapper div.orbit-wrapper div.slider-nav span { width: 50px; height: 50px; background: transparent url(../images/orbit-nav-sprite.png) no-repeat; }
 #hero-wrapper div.orbit-wrapper div.slider-nav span.left { left: -25px; background-position: -10px -10px; }
 #hero-wrapper div.orbit-wrapper div.slider-nav span.right { right: -25px; background-position: -10px -80px; }
 #hero-wrapper div.orbit-wrapper div.slider-nav span.left:hover { background-position: -10px -150px; }
@@ -226,6 +227,10 @@ body#home { background: $white url(../images/home-bg.png) 0 0 repeat-x; }
 #hero-wrapper div.orbit-wrapper span.pause:hover { background-position: -27px -337px; }
 #hero-wrapper div.orbit-wrapper span.pause.active { background-position: -27px -311px; }
 #hero-wrapper div.orbit-wrapper span.pause.active:hover { background-position: -27px -361px; }
+
+#hero.orbit.with-bullets { margin-bottom: 0; }
+
+body#home #main .twelve.columns { background: $white; }
 
 #testimonials blockquote { padding: 0; border-left: 0; font-family: serif; font-size: 1em; font-style: italic; font-weight: bold; color: $black; }
 #testimonials cite { font-size: .8em; color: $txtColor; }
@@ -324,3 +329,41 @@ h4 + table { margin-top: -14px; @include border-radius(0 0 3px 3px); }
 
 
 
+/* Very large screens */
+@media only screen and (min-width: 1441px) {
+  
+}
+
+/* Medium screens */
+@media only screen and (max-width: 1279px) and (min-width: 768px) {
+  .top-bar ul > li a.active { background-color: transparent; color: $white; }
+
+  #hero-wrapper div.orbit-wrapper div.slider-nav span.right,
+  #hero-wrapper div.orbit-wrapper div.slider-nav span.left { display: none; }
+  
+  #hero-wrapper div.orbit-wrapper div.timer { bottom: 9px; right: 42%; }
+  #hero-wrapper ul.orbit-bullets { bottom: -7px; }
+}
+
+/* Small screens */
+@media only screen and (max-width: 767px) {
+  .top-bar ul > li a.active { background-color: transparent; color: $white; }
+
+  #hero-wrapper div.orbit-wrapper div.slider-nav span.right,
+  #hero-wrapper div.orbit-wrapper div.slider-nav span.left { display: none; }
+}
+
+/* Landscape Orientation */
+@media screen and (orientation: landscape) {
+  
+}
+
+/* Portrait Orientation */
+@media screen and (orientation: portrait) {
+  
+}
+
+/* Touch Detection */
+.touch .your-class {
+  
+}
