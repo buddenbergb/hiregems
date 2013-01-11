@@ -71,8 +71,8 @@ function OnError(request, status, error)
 $(document).ready(function() {
   jQuery.support.cors = true;
 
-  jQuery('#hero').orbit({
-    animation: 'fade',                  // fade, horizontal-slide, vertical-slide, horizontal-push
+  $('#hero').orbit({
+    animation: 'fade',
     animationSpeed: 400,
     timer: true,
     advanceSpeed: 8000,
@@ -81,7 +81,7 @@ $(document).ready(function() {
     fluid: '16x7'
   });
 
-  jQuery('#testimonials').orbit({
+  $('#testimonials').orbit({
     animation: 'horizontal-slide',
     animationSpeed: 400,
     timer: false,
@@ -91,7 +91,7 @@ $(document).ready(function() {
     fluid: '16x8'
   });
 
-  jQuery('#customer-logos, #partner-logos').orbit({
+  $('#customer-logos, #partner-logos').orbit({
     animation: 'horizontal-slide',
     animationSpeed: 400,
     timer: false,
@@ -101,14 +101,14 @@ $(document).ready(function() {
   });
 
   $('.click-share').tabSlideOut({
-      tabHandle: '.handle',                              //class of the element that will be your tab
-      pathToTabImage: '../images/click-share.png',          //path to the image for the tab *required*
-      imageHeight: '218px',                               //height of tab image *required*
-      imageWidth: '50px',                               //width of tab image *required*    
-      tabLocation: 'right',                               //side of screen where tab lives, top, right, bottom, or left
-      speed: 300,                                        //speed of animation
-      action: 'click',                                   //options: 'click' or 'hover', action to trigger animation
-      topPos: '200px',                                   //position from the top
-      fixedPosition: true                               //options: true makes it stick(fixed position) on scroll
+      tabHandle: '.handle',
+      pathToTabImage: '../images/click-share.png',
+      imageHeight: '218px',
+      imageWidth: '50px',
+      tabLocation: 'right',
+      speed: 300,
+      action: 'click',
+      topPos: '200px',
+      fixedPosition: true
   });
 });
