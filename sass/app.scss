@@ -207,6 +207,10 @@ body.private #login-register { display: none; }
 #social-nav i { font-size: 2.4em; line-height: .3em; color: $txtColor; }
 #social-nav a:hover i { color: $highlightColor; }
 
+.device-iOS,
+.device-android,
+.device-any { display: none; }
+
 
 // Legal
 #legal { background: #ccc; }
