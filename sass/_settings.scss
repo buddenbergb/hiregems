@@ -253,29 +253,18 @@ $topBarLinkSize: 14px;
 }
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
+  font-family: 'fontello';
   font-style: normal;
+  font-weight: normal;
   speak: none;
   display: inline-block;
   text-align: center;
 }
 
-.icon-list:before { font-family: 'fontello'; font-weight: normal; content: '\e005'; } /* '' */
-
-.icon-phone:before { font-family: 'fontello'; font-weight: normal; content: '📞'; } /* '\1f4de' */
-.icon-mail:before { font-family: 'fontello'; font-weight: normal; content: '\2709'; } /* '✉' */
-
-.icon-account:before { font-family: 'fontello'; font-weight: normal; content: '👤'; } /* '\1f464' */
-.icon-credits:before { font-family: Verdana; font-weight: bold; content: '$'; }
-.icon-credit-count { font-family: Verdana; font-weight: bold; }
-.icon-login:before { font-family: 'fontello'; font-weight: normal; content: '\e740'; } /* '' */
-.icon-logout:before { font-family: 'fontello'; font-weight: normal; content: '\e800'; } /* '' */
-.icon-user:before { font-family: 'fontello'; font-weight: normal; content: '👤'; } /* '\1f464' */
-.icon-key:before { font-family: 'fontello'; font-weight: normal; content: '🔑'; } /* '\1f511' */
-
-.icon-play-circle2:before { font-family: 'fontello'; font-weight: normal; content: '\e048'; } /* '' */
-.icon-twitter-circled:before { font-family: 'fontello'; font-weight: normal; content: '\f30a'; } /* '' */
-.icon-facebook-circled:before { font-family: 'fontello'; font-weight: normal; content: '\f30d'; } /* '' */
-.icon-linkedin-circled:before { font-family: 'fontello'; font-weight: normal; content: '\f319'; } /* '' */
-
-.slider-nav .left:before { font-family: 'fontello'; font-weight: normal; content: '\e75d'; } /* '' */
-.slider-nav .right:before { font-family: 'fontello'; font-weight: normal; content: '\e75e'; } /* '' */
+.icon-list:before { content: '\e005'; } /* '' */
+.icon-play-circle2:before { content: '\e048'; } /* '' */
+.icon-left-open:before { content: '\e75d'; } /* '' */
+.icon-right-open:before { content: '\e75e'; } /* '' */
+.icon-twitter-circled:before { content: '\f30a'; } /* '' */
+.icon-facebook-circled:before { content: '\f30d'; } /* '' */
+.icon-gplus-circled:before { content: '\f310'; } /* '' */

@@ -10,137 +10,56 @@
 /* line 255, ../sass/_settings.scss */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
+  font-family: 'fontello';
   font-style: normal;
+  font-weight: normal;
   speak: none;
   display: inline-block;
   text-align: center;
 }
 
-/* line 262, ../sass/_settings.scss */
+/* line 264, ../sass/_settings.scss */
 .icon-list:before {
-  font-family: 'fontello';
-  font-weight: normal;
   content: '\e005';
 }
 
 /* '' */
-/* line 264, ../sass/_settings.scss */
-.icon-phone:before {
-  font-family: 'fontello';
-  font-weight: normal;
-  content: '📞';
-}
-
-/* '\1f4de' */
 /* line 265, ../sass/_settings.scss */
-.icon-mail:before {
-  font-family: 'fontello';
-  font-weight: normal;
-  content: '\2709';
-}
-
-/* '✉' */
-/* line 267, ../sass/_settings.scss */
-.icon-account:before {
-  font-family: 'fontello';
-  font-weight: normal;
-  content: '👤';
-}
-
-/* '\1f464' */
-/* line 268, ../sass/_settings.scss */
-.icon-credits:before {
-  font-family: Verdana;
-  font-weight: bold;
-  content: '$';
-}
-
-/* line 269, ../sass/_settings.scss */
-.icon-credit-count {
-  font-family: Verdana;
-  font-weight: bold;
-}
-
-/* line 270, ../sass/_settings.scss */
-.icon-login:before {
-  font-family: 'fontello';
-  font-weight: normal;
-  content: '\e740';
-}
-
-/* '' */
-/* line 271, ../sass/_settings.scss */
-.icon-logout:before {
-  font-family: 'fontello';
-  font-weight: normal;
-  content: '\e800';
-}
-
-/* '' */
-/* line 272, ../sass/_settings.scss */
-.icon-user:before {
-  font-family: 'fontello';
-  font-weight: normal;
-  content: '👤';
-}
-
-/* '\1f464' */
-/* line 273, ../sass/_settings.scss */
-.icon-key:before {
-  font-family: 'fontello';
-  font-weight: normal;
-  content: '🔑';
-}
-
-/* '\1f511' */
-/* line 275, ../sass/_settings.scss */
 .icon-play-circle2:before {
-  font-family: 'fontello';
-  font-weight: normal;
   content: '\e048';
 }
 
 /* '' */
-/* line 276, ../sass/_settings.scss */
-.icon-twitter-circled:before {
-  font-family: 'fontello';
-  font-weight: normal;
-  content: '\f30a';
-}
-
-/* '' */
-/* line 277, ../sass/_settings.scss */
-.icon-facebook-circled:before {
-  font-family: 'fontello';
-  font-weight: normal;
-  content: '\f30d';
-}
-
-/* '' */
-/* line 278, ../sass/_settings.scss */
-.icon-linkedin-circled:before {
-  font-family: 'fontello';
-  font-weight: normal;
-  content: '\f319';
-}
-
-/* '' */
-/* line 280, ../sass/_settings.scss */
-.slider-nav .left:before {
-  font-family: 'fontello';
-  font-weight: normal;
+/* line 266, ../sass/_settings.scss */
+.icon-left-open:before {
   content: '\e75d';
 }
 
 /* '' */
-/* line 281, ../sass/_settings.scss */
-.slider-nav .right:before {
-  font-family: 'fontello';
-  font-weight: normal;
+/* line 267, ../sass/_settings.scss */
+.icon-right-open:before {
   content: '\e75e';
 }
 
 /* '' */
+/* line 268, ../sass/_settings.scss */
+.icon-twitter-circled:before {
+  content: '\f30a';
+}
+
+/* '' */
+/* line 269, ../sass/_settings.scss */
+.icon-facebook-circled:before {
+  content: '\f30d';
+}
+
+/* '' */
+/* line 270, ../sass/_settings.scss */
+.icon-gplus-circled:before {
+  content: '\f310';
+}
+
+/* '' */
 /* Requires: normalize.css */
 /* Global Reset & Standards ---------------------- */
 /* line 5, ../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.2.2/scss/foundation/common/_globals.scss */
