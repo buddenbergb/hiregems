@@ -223,9 +223,9 @@ body.private #login-register { display: none; }
 // Home
 body#home { background: $white url(../images/home-bg.png) 0 0 repeat-x; }
 
-#hero { background: $white; @include box-shadow( rgba(0, 0, 0, 0.3) 0 5px 10px); }
+#hero { background: $white; @include box-shadow( rgba(0, 0, 0, 0.3) 0 5px 6px); }
 #hero a { margin: 15px; }
-#hero-wrapper { padding-bottom: 30px; background: $white; }
+#hero-wrapper { padding-bottom: 30px; }
 #hero-wrapper div.orbit-wrapper div.slider-nav span { width: 50px; height: 50px; background: transparent url(../images/orbit-nav-sprite.png) no-repeat; }
 #hero-wrapper div.orbit-wrapper div.slider-nav span.left { left: -25px; background-position: -10px -10px; }
 #hero-wrapper div.orbit-wrapper div.slider-nav span.right { right: -25px; background-position: -10px -80px; }
@@ -240,8 +240,6 @@ body#home { background: $white url(../images/home-bg.png) 0 0 repeat-x; }
 #hero-wrapper div.orbit-wrapper span.pause.active:hover { background-position: -27px -361px; }
 
 #hero.orbit.with-bullets { margin-bottom: 0; }
-
-body#home #main .twelve.columns { background: $white; }
 
 #testimonials blockquote { padding: 0; border-left: 0; font-family: serif; font-size: 1em; font-style: italic; font-weight: bold; color: $black; }
 #testimonials cite { font-size: .8em; color: $txtColor; }
