@@ -1,5 +1,9 @@
 var $ = jQuery.noConflict();
 
+var acctCred = $('#account-credits');
+var menuWidth = $(acctCred).find('ul').width();
+$(acctCred).find('strong').css({ width : menuWidth });
+
 $(document).ready(function() {
   jQuery.support.cors = true;
 
@@ -10,7 +14,7 @@ $(document).ready(function() {
     }, 300);
     return false;
   });
-  
+    
   $('#hero').orbit({
     animation: 'fade',
     animationSpeed: 400,
