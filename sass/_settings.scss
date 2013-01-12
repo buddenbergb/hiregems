@@ -259,6 +259,8 @@ $topBarLinkSize: 14px;
   text-align: center;
 }
 
+.icon-list:before { font-family: 'fontello'; font-weight: normal; content: '\e005'; } /* '' */
+
 .icon-phone:before { font-family: 'fontello'; font-weight: normal; content: '📞'; } /* '\1f4de' */
 .icon-mail:before { font-family: 'fontello'; font-weight: normal; content: '\2709'; } /* '✉' */
 

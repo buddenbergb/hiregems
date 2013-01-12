@@ -3,6 +3,14 @@ var $ = jQuery.noConflict();
 $(document).ready(function() {
   jQuery.support.cors = true;
 
+  var topBar = $('.toggle-topbar a');
+  $(topBar).click(function() {
+    $('.top-bar').animate({
+      height: 300
+    }, 300);
+    return false;
+  });
+  
   $('#hero').orbit({
     animation: 'fade',
     animationSpeed: 400,

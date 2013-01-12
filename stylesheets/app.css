@@ -17,6 +17,14 @@
 }
 
 /* line 262, ../sass/_settings.scss */
+.icon-list:before {
+  font-family: 'fontello';
+  font-weight: normal;
+  content: '\e005';
+}
+
+/* '' */
+/* line 264, ../sass/_settings.scss */
 .icon-phone:before {
   font-family: 'fontello';
   font-weight: normal;
@@ -24,7 +32,7 @@
 }
 
 /* '\1f4de' */
-/* line 263, ../sass/_settings.scss */
+/* line 265, ../sass/_settings.scss */
 .icon-mail:before {
   font-family: 'fontello';
   font-weight: normal;
@@ -32,7 +40,7 @@
 }
 
 /* '✉' */
-/* line 265, ../sass/_settings.scss */
+/* line 267, ../sass/_settings.scss */
 .icon-account:before {
   font-family: 'fontello';
   font-weight: normal;
@@ -40,20 +48,20 @@
 }
 
 /* '\1f464' */
-/* line 266, ../sass/_settings.scss */
+/* line 268, ../sass/_settings.scss */
 .icon-credits:before {
   font-family: Verdana;
   font-weight: bold;
   content: '$';
 }
 
-/* line 267, ../sass/_settings.scss */
+/* line 269, ../sass/_settings.scss */
 .icon-credit-count {
   font-family: Verdana;
   font-weight: bold;
 }
 
-/* line 268, ../sass/_settings.scss */
+/* line 270, ../sass/_settings.scss */
 .icon-login:before {
   font-family: 'fontello';
   font-weight: normal;
@@ -61,7 +69,7 @@
 }
 
 /* '' */
-/* line 269, ../sass/_settings.scss */
+/* line 271, ../sass/_settings.scss */
 .icon-logout:before {
   font-family: 'fontello';
   font-weight: normal;
@@ -69,7 +77,7 @@
 }
 
 /* '' */
-/* line 270, ../sass/_settings.scss */
+/* line 272, ../sass/_settings.scss */
 .icon-user:before {
   font-family: 'fontello';
   font-weight: normal;
@@ -77,7 +85,7 @@
 }
 
 /* '\1f464' */
-/* line 271, ../sass/_settings.scss */
+/* line 273, ../sass/_settings.scss */
 .icon-key:before {
   font-family: 'fontello';
   font-weight: normal;
@@ -85,7 +93,7 @@
 }
 
 /* '\1f511' */
-/* line 273, ../sass/_settings.scss */
+/* line 275, ../sass/_settings.scss */
 .icon-play-circle2:before {
   font-family: 'fontello';
   font-weight: normal;
@@ -93,7 +101,7 @@
 }
 
 /* '' */
-/* line 274, ../sass/_settings.scss */
+/* line 276, ../sass/_settings.scss */
 .icon-twitter-circled:before {
   font-family: 'fontello';
   font-weight: normal;
@@ -101,7 +109,7 @@
 }
 
 /* '' */
-/* line 275, ../sass/_settings.scss */
+/* line 277, ../sass/_settings.scss */
 .icon-facebook-circled:before {
   font-family: 'fontello';
   font-weight: normal;
@@ -109,7 +117,7 @@
 }
 
 /* '' */
-/* line 276, ../sass/_settings.scss */
+/* line 278, ../sass/_settings.scss */
 .icon-linkedin-circled:before {
   font-family: 'fontello';
   font-weight: normal;
@@ -117,7 +125,7 @@
 }
 
 /* '' */
-/* line 278, ../sass/_settings.scss */
+/* line 280, ../sass/_settings.scss */
 .slider-nav .left:before {
   font-family: 'fontello';
   font-weight: normal;
@@ -125,7 +133,7 @@
 }
 
 /* '' */
-/* line 279, ../sass/_settings.scss */
+/* line 281, ../sass/_settings.scss */
 .slider-nav .right:before {
   font-family: 'fontello';
   font-weight: normal;
@@ -6388,6 +6396,7 @@ header {
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 7px inset;
   box-shadow: rgba(0, 0, 0, 0.4) 0 0 7px inset;
   background: #f7f7f7;
+  overflow: hidden;
 }
 
 /* line 164, ../sass/app.scss */
@@ -7083,43 +7092,114 @@ h4 + table {
 }
 
 /* Very large screens */
-/* Medium screens */
-@media only screen and (max-width: 1279px) and (min-width: 768px) {
-  /* line 339, ../sass/app.scss */
-  .top-bar ul > li a.active {
-    background-color: transparent;
-    color: white;
-  }
-
-  /* line 342, ../sass/app.scss */
+@media only screen and (min-width: 1441px) {
+  /* line 335, ../sass/app.scss */
   #hero-wrapper div.orbit-wrapper div.slider-nav span.right,
   #hero-wrapper div.orbit-wrapper div.slider-nav span.left {
     display: none;
   }
 
-  /* line 344, ../sass/app.scss */
+  /* line 337, ../sass/app.scss */
   #hero-wrapper div.orbit-wrapper div.timer {
     bottom: 9px;
     right: 42%;
   }
 
-  /* line 345, ../sass/app.scss */
+  /* line 338, ../sass/app.scss */
   #hero-wrapper ul.orbit-bullets {
     bottom: -7px;
   }
 }
-/* Small screens */
-@media only screen and (max-width: 767px) {
-  /* line 350, ../sass/app.scss */
+/* Medium screens */
+@media only screen and (max-width: 1279px) and (min-width: 768px) {
+  /* line 343, ../sass/app.scss */
+  .top-bar ul > li.toggle-topbar a {
+    height: 46px;
+    width: 46px;
+    border: 0;
+    font-size: 3em;
+    right: 20px;
+    margin: 0;
+    top: 0%;
+  }
+
+  /* line 345, ../sass/app.scss */
+  #hero-wrapper div.orbit-wrapper div.slider-nav span.right,
+  #hero-wrapper div.orbit-wrapper div.slider-nav span.left {
+    display: none;
+  }
+
+  /* line 347, ../sass/app.scss */
+  #hero-wrapper div.orbit-wrapper div.timer {
+    bottom: 9px;
+    right: 42%;
+  }
+
+  /* line 348, ../sass/app.scss */
+  #hero-wrapper ul.orbit-bullets {
+    bottom: -7px;
+  }
+}
+/* Medium screens */
+@media only screen and (max-width: 960px) and (min-width: 768px) {
+  /* line 353, ../sass/app.scss */
   .top-bar ul > li a.active {
     background-color: transparent;
     color: white;
   }
 
-  /* line 353, ../sass/app.scss */
+  /* line 354, ../sass/app.scss */
+  .top-bar ul > li.toggle-topbar a {
+    height: 46px;
+    width: 46px;
+    border: 0;
+    font-size: 3em;
+    right: 20px;
+    margin: 0;
+    top: 0%;
+  }
+
+  /* line 356, ../sass/app.scss */
   #hero-wrapper div.orbit-wrapper div.slider-nav span.right,
   #hero-wrapper div.orbit-wrapper div.slider-nav span.left {
     display: none;
+  }
+}
+/* Small screens */
+@media only screen and (max-width: 767px) {
+  /* line 361, ../sass/app.scss */
+  .top-bar ul > li a:not(.button) {
+    padding: 0 8px;
+    font-size: 1.2em;
+  }
+
+  /* line 362, ../sass/app.scss */
+  .top-bar ul > li a.active {
+    background-color: transparent;
+    color: white;
+  }
+
+  /* line 363, ../sass/app.scss */
+  .top-bar ul > li.toggle-topbar a {
+    height: 36px;
+    width: 36px;
+    border: 0;
+    font-size: 2.5em;
+    right: 20px;
+    margin: 0;
+    top: 0%;
+  }
+
+  /* line 367, ../sass/app.scss */
+  #hero-wrapper .timer, #hero-wrapper .mask, #hero-wrapper .slider-nav, #hero-wrapper .orbit-bullets,
+  #hero-wrapper div.orbit-wrapper div.slider-nav span.right,
+  #hero-wrapper div.orbit-wrapper div.slider-nav span.left {
+    display: none;
+  }
+
+  /* line 368, ../sass/app.scss */
+  #hero a {
+    margin: 0;
   }
 }
 /* Landscape Orientation */
