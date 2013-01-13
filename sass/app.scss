@@ -86,7 +86,7 @@ body.internal { background: $white url(../images/internal-bg.png) 0 0 repeat-x; 
 
 // Content
 .page-content { background: url(../images/page-content-bg.png) center top no-repeat; padding-bottom: 60px; }
-.page-title { margin-bottom: 28px; padding: 20px; background: $secondaryColor url(../images/page-title-bg.jpg) right top no-repeat; font-size: 2.15em; color: $white; }
+.page-title { margin: 14px 18px 28px; padding: 20px; background: $secondaryColor url(../images/page-title-bg.jpg) right top no-repeat; font-size: 2.15em; color: $white; }
 .sub-title { margin: 14px 20px 28px; padding-bottom: 18px; border-bottom: 1px dotted rgba(0, 0, 0, 0.2); font-size: 1.25em; }
 .page-content article { padding: 0 20px; }
 .page-content strong { color: $black; }

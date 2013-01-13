@@ -6049,7 +6049,7 @@ body.internal {
 
 /* line 89, ../sass/app.scss */
 .page-title {
-  margin-bottom: 28px;
+  margin: 14px 18px 28px;
   padding: 20px;
   background: #9e2f22 url(../images/page-title-bg.jpg) right top no-repeat;
   font-size: 2.15em;
