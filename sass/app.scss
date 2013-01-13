@@ -138,6 +138,12 @@ ul.orbit-bullets li.active { opacity: 1; }
 .reveal-modal { border-top: 10px solid $highlightColor; }
 
 
+// Tooltip overrides
+.tooltip { background: $secondaryColor; color: $white; }
+.tooltip.tip-right > .nub { border-right-color: $secondaryColor; }
+.tooltip.tip-left > .nub { border-left-color: $secondaryColor;}
+
+
 // Widgets
 aside .widget { margin-bottom: 30px; }
 .widget a { font-weight: bold; color: $secondaryColor; }
@@ -316,14 +322,20 @@ body#contact-us .dropdown { margin-bottom: 16px; }
 #account-menu a:hover, 
 #account-menu li.active a { background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #f6f6f6, vertical); @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%)); color: $mainColor; @include text-shadow(0px 1px 0px $white); }
 
-#history-table th { width: 12.25%; }
-#billing-table th { width: 25%; }
+.activity-table th { position: relative; color: $secondaryColor; }
+.activity-table th:after { position: absolute; top: 40%; right: 10px; display: block; width: 10px; height: 15px; content: '\2b0d'; font-size: 18px; color: $txtColor; }
+#history-table th { position: relative; width: 12.25%; color: #9e2f22; }
+#billing-table th { position: relative; width: 25%; color: #9e2f22; }
 
 #account-info-form td:first-child,
 #subscription-form td:first-child { width: 30%; }
 
 #account-info-form td:first-child,
 #subscription-form td:last-child { width: 70%; }
+
+.score.lower { background-color: rgba($secondaryColor, 0.2); }
+.score.middle { background-color: rgba($highlightColor, 0.2); }
+.score.upper { background-color: rgba(11, 153, 20, 0.2); }
 
 
 // Account Information

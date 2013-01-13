@@ -261,6 +261,7 @@ $topBarLinkSize: 14px;
   text-align: center;
 }
 
+.icon-sortable:before { content: '\2b0c'; } /* '⬌' */
 .icon-list:before { content: '\e005'; } /* '' */
 .icon-play-circle2:before { content: '\e048'; } /* '' */
 .icon-left-open:before { content: '\e75d'; } /* '' */
