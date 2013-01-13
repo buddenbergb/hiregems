@@ -81,3 +81,44 @@ table.bind('aftertablesort', function (event, data) {
     var arrow = data.direction === "asc" ? "↑" : "↓";
     th.eq(data.column).append('<span class="arrow">' + arrow +'</span>');
 });
+
+var $ = jQuery.noConflict();
+
+var acctCred = $('#account-credits');
+var menuWidth = $(acctCred).find('ul').width();
+$(acctCred).find('strong').css({ width : menuWidth });
+
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
+if (isMobile.iOS) {
+  $('.device-iOS').show();
+} else {
+  
+  if (isMobile.Android) {
+    $('.device-android').show();
+  
+  } else { 
+    $('.device-any').show();
+  
+  };
+
+};
