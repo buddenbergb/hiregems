@@ -126,7 +126,7 @@ h4 + .ad { position: relative; margin-top: -14px; }
 
 
 // Alert Box overrides
-.alert-box.info { padding: 10px 15px 0; background: rgba($highlightColor, 0.1); color: $mainColor; @include text-shadow(none); }
+.alert-box.info { padding: 10px 15px 0; background: $secondaryColor; color: $white; @include text-shadow(none); @include border-radius(0); }
 
 
 // Orbit overrides
@@ -175,6 +175,7 @@ header { padding-top: 14px; }
 body.public .user-menu > strong { margin-right: 30px; }
 
 #register-link a { padding-right: 26px; }
+#login-link a { color: $txtColor; @include text-shadow(0px 1px 0px #fff); }
 
 //#account-credits a { width: 110px; }
 #account-credits ul { background-color: rgb(238,238,238); @include filter-gradient(#eeeeee, #cccccc, vertical); @include background-image(linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%)); }
@@ -256,7 +257,7 @@ body#home { background: $white url(../images/home-bg.png) 0 0 repeat-x; }
 
 // Begin Launches
 .single-product {  }
-.single-product footer { background: $secondaryColor; }
+.single-product footer { background: #7e746f; }
 .single-product p { margin-bottom: 0; }
 .single-product hr { margin: 10px 0; }
 .single-product big,

@@ -52,7 +52,7 @@ $(document).ready(function() {
       fixedPosition: true
   });
 
-  $('.launch-now').click(function() {
+  $('.launch-now.enabled').click(function() {
     $('.login-required').reveal({
       animation: 'fade',
       animationSpeed: 200,
@@ -60,12 +60,22 @@ $(document).ready(function() {
     });
   });
   
-  $('.launch-email').click(function() {
+  $('.launch-email.enabled').click(function() {
     $('.credits-required').reveal({
       animation: 'fade',
       animationSpeed: 200,
       closeOnBackgroundClick: false
     });
   });
-  
+
+  $('.launch-select').click(function() {
+    var launchBtn = $(this).closest('form').find('.launch-btn');
+    
+    if ( !$(this).is (':checked') ) {
+      $(launchBtn).attr('disabled' , true );
+    } else {
+      $(launchBtn).removeAttr('disabled');
+    }
+  });
+
 });
