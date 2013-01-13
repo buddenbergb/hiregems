@@ -6,9 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>hireGEMS | immediate and accurate knowledge about how a person will behave on the job.</title>
   <link rel="stylesheet" href="/stylesheets/app.css">
+  <link rel="stylesheet" href="http://googleplus-activity-widget.googlecode.com/svn/v1/light.css">
   <script src="/javascripts/foundation/modernizr.foundation.js"></script>
 </head>
 <body id="contact-us" class="public internal">
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=263520433660508";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   <header>
     <div id="brand">
       <div class="row">
@@ -98,11 +107,11 @@
               </div>
               <div class="widget">
                 <p><big>Facebook</big></p>
-                <p>905 people like hireGEMS</p>
+                <div class="fb-like-box" data-href="http://www.facebook.com/Hiregems" data-width="290" data-height="300" data-show-faces="true" data-stream="false" data-border-color="#ffffff" data-header="false"></div>
               </div>
               <div class="widget">
                 <p><big>Google+</big></p>
-                <p>1,638 have hireGEMS in circles</p>
+                <div class="google-plus-activity" data-options="{ user: '101455351209056663502' }"></div>
               </div>
             </aside>
           </div>
@@ -225,6 +234,7 @@
   <script src="/javascripts/public.js"></script>
   <script src="/javascripts/app.js"></script>
   <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50e958302d5baa49&domready=1" defer="defer"></script>
+  <script src="//googleplus-activity-widget.googlecode.com/files/jquery.googleplus-activity-1.0.min.js" defer="defer"></script>
 
 </body>
 </html>
