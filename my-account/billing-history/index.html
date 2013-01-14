@@ -19,7 +19,7 @@
         </h1>
         <div>
           <nav id="account-credits" class="user-menu">
-            <strong>Welcome, <a href="/my-account/">Joseph Smitherson!</a> My Credits: <a href="/my-account/my-credits/" class="user-credit-count">2</a>.</strong>
+            <strong>Welcome, <a href="/my-account/">Joseph Smitherson!</a></strong>
             <ul>
               <li id="my-account-link"><a href="/my-account/">My Account</a></li> <li class="divider"></li>
               <li id="buy-credits-link"><a href="/my-account/my-credits/">Buy Credits</a></li> <li class="divider"></li>
@@ -60,63 +60,59 @@
           <h3 class="sub-title">Billing History</h3>
         </hgroup>
         <article>
-          <nav id="account-menu" class="three columns">
-            <ul class="side-nav">
-              <li class="menu-title"><strong>Welcome, Joseph!</strong></li>
-              <li class="divider"></li>
-              <li><a href="/my-account/account-information/">Account Information</a></li> <li class="divider"></li>
-              <li><a href="/my-account/my-credits/">My Credits</a></li> <li class="divider"></li>
-              <li><a href="/my-account/activity-history/">Activity History</a></li> <li class="divider"></li>
-              <li class="active"><a href="/my-account/billing-history/">Billing History</a></li> <li class="divider"></li>
-              <li><a href="/my-account/newsletter-subscriptions/">Newsletter Subscriptions</a></li> <li class="divider"></li>
-            </ul>
+          <nav id="account-menu" class="">
+            <dl class="tabs side-nav mobile">
+              <dd><a href="/my-account/account-information/">Account Information</a></dd>
+              <dd><a href="/my-account/my-credits/">My Credits</a></dd>
+              <dd><a href="/my-account/activity-history/">Activity History</a></dd>
+              <dd class="active"><a href="/my-account/billing-history/">Billing History</a></dd>
+              <dd><a href="/my-account/newsletter-subscriptions/">Newsletter Subscriptions</a></dd>
+            </dl>
           </nav>
-          <div class="nine columns">
-            <div class="row">
-              <table id="billing-table" class="twelve activity-table">
-                <thead>
-                  <tr>
-                    <th scope="col" data-sort="int">Location ID</th>
-                    <th scope="col" data-sort="int">Purchase Date</th>
-                    <th scope="col" data-sort="int">Credits</th>
-                    <th scope="col" data-sort="int">Dollars</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="location-id">1248790</td>
-                    <td class="date-purchased">10/10/2000 2:27:16 PM</td>
-                    <td class="credits-spent">57</td>
-                    <td class="dollars-spent">654</td>
-                  </tr>
-                  <tr>
-                    <td class="location-id">689789</td>
-                    <td class="date-purchased">1/10/2000 2:27:16 PM</td>
-                    <td class="credits-spent">157</td>
-                    <td class="dollars-spent">54</td>
-                  </tr>
-                  <tr>
-                    <td class="location-id">56875</td>
-                    <td class="date-purchased">1/1/2000 2:27:16 PM</td>
-                    <td class="credits-spent">52</td>
-                    <td class="dollars-spent">64</td>
-                  </tr>
-                  <tr>
-                    <td class="location-id">34535</td>
-                    <td class="date-purchased">10/1/2000 2:27:16 PM</td>
-                    <td class="credits-spent">902</td>
-                    <td class="dollars-spent">23</td>
-                  </tr>
-                  <tr>
-                    <td class="location-id">245534</td>
-                    <td class="date-purchased">6/10/2000 2:27:16 PM</td>
-                    <td class="credits-spent">537</td>
-                    <td class="dollars-spent">954</td>
-                  </tr>
-                </tbody>
-              </table>
-              <a href="#">Print Activity History</a>
-            </div>
+          <div class="twelve">
+            <table id="billing-table" class="activity-table">
+              <thead>
+                <tr>
+                  <th scope="col" data-sort="int">Location ID</th>
+                  <th scope="col" data-sort="int">Purchase Date</th>
+                  <th scope="col" data-sort="int">Credits</th>
+                  <th scope="col" data-sort="int">Dollars</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="location-id">1248790</td>
+                  <td class="date-purchased">10/10/2000 2:27:16 PM</td>
+                  <td class="credits-spent">57</td>
+                  <td class="dollars-spent">654</td>
+                </tr>
+                <tr>
+                  <td class="location-id">689789</td>
+                  <td class="date-purchased">1/10/2000 2:27:16 PM</td>
+                  <td class="credits-spent">157</td>
+                  <td class="dollars-spent">54</td>
+                </tr>
+                <tr>
+                  <td class="location-id">56875</td>
+                  <td class="date-purchased">1/1/2000 2:27:16 PM</td>
+                  <td class="credits-spent">52</td>
+                  <td class="dollars-spent">64</td>
+                </tr>
+                <tr>
+                  <td class="location-id">34535</td>
+                  <td class="date-purchased">10/1/2000 2:27:16 PM</td>
+                  <td class="credits-spent">902</td>
+                  <td class="dollars-spent">23</td>
+                </tr>
+                <tr>
+                  <td class="location-id">245534</td>
+                  <td class="date-purchased">6/10/2000 2:27:16 PM</td>
+                  <td class="credits-spent">537</td>
+                  <td class="dollars-spent">954</td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#">Print Billing History</a>
           </div>
         </article>
       </div>

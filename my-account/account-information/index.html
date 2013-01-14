@@ -19,7 +19,7 @@
         </h1>
         <div>
           <nav id="account-credits" class="user-menu">
-            <strong>Welcome, <a href="/my-account/">Joseph Smitherson!</a> My Credits: <a href="/my-account/my-credits/" class="user-credit-count">2</a>.</strong>
+            <strong>Welcome, <a href="/my-account/">Joseph Smitherson!</a></strong>
             <ul>
               <li id="my-account-link"><a href="/my-account/">My Account</a></li> <li class="divider"></li>
               <li id="buy-credits-link"><a href="/my-account/my-credits/">Buy Credits</a></li> <li class="divider"></li>
@@ -60,176 +60,207 @@
           <h3 class="sub-title">Account Information</h3>
         </hgroup>
         <article>
-          <nav id="account-menu" class="three columns">
-            <ul class="side-nav">
-              <li class="menu-title"><strong>Welcome, Joseph!</strong></li>
-              <li class="divider"></li>
-              <li class="active"><a href="/my-account/account-information/">Account Information</a></li> <li class="divider"></li>
-              <li><a href="/my-account/my-credits/">My Credits</a></li> <li class="divider"></li>
-              <li><a href="/my-account/activity-history/">Activity History</a></li> <li class="divider"></li>
-              <li><a href="/my-account/billing-history/">Billing History</a></li> <li class="divider"></li>
-              <li><a href="/my-account/newsletter-subscriptions/">Newsletter Subscriptions</a></li> <li class="divider"></li>
-            </ul>
+          <nav id="account-menu" class="">
+            <dl class="tabs side-nav mobile">
+              <dd class="active"><a href="/my-account/account-information/">Account Information</a></dd>
+              <dd><a href="/my-account/my-credits/">My Credits</a></dd>
+              <dd><a href="/my-account/activity-history/">Activity History</a></dd>
+              <dd><a href="/my-account/billing-history/">Billing History</a></dd>
+              <dd><a href="/my-account/newsletter-subscriptions/">Newsletter Subscriptions</a></dd>
+            </dl>
           </nav>
-          <form class="nine columns custom">
-            <h4>Current Account Information</h4>
-            <table class="twelve">
-              <tbody>
-                <tr>
-                  <td width="30%"><strong>Account Type</strong></td>
-                  <td width="70%">National Account</td>
-                </tr>
-                <tr>
-                  <td width="30%"><strong>Location ID</strong></td>
-                  <td width="70%">198749871643</td>
-                </tr>
-                <tr>
-                  <td width="30%"><strong>Email Address</strong></td>
-                  <td width="70%">joesmith@email.com</td>
-                </tr>
-                <tr>
-                  <td width="30%"><strong>First Name</strong></td>
-                  <td width="70%">Joseph</td>
-                </tr>
-                <tr>
-                  <td width="30%"><strong>Last Name</strong></td>
-                  <td width="70%">Smith</td>
-                </tr>
-                <tr>
-                  <td width="30%"><strong>Phone</strong></td>
-                  <td width="70%">(540) 672-0049</td>
-                </tr>
-                <tr>
-                  <td width="30%"><strong>Card Number</strong></td>
-                  <td width="70%">**** **** **** 2013</td>
-                </tr>
-                <tr>
-                  <td width="30%"><strong>Cardholder's Name</strong></td>
-                  <td width="70%">Joseph Smitheson</td>
-                </tr>
-                <tr>
-                  <td width="30%"><strong>Billing Address</strong></td>
-                  <td width="70%">
-                    19101 Address Street Way<br />
-                    Somecity, California 90101
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <h4>Edit Your Login Information</h4>
-            <table class="twelve">
-              <tbody>
-                <tr>
-                  <td width="30%"><label for="login-type"><strong>Account Type</strong></label></td>
-                  <td width="70%">
-                    <select style="display:none;" id="login-type">
-                      <option SELECTED>National Account</option>
-                      <option>This is another option</option>
-                      <option>Look, a third option</option>
-                    </select>
-                    <div class="custom dropdown">
-                      <a href="#" class="current">National Account</a>
-                      <a href="#" class="selector"></a>
-                      <ul>
-                        <li>National Account</li>
-                        <li>This is another option</li>
-                        <li>Look, a third option</li>
-                      </ul>
+          <form class="twelve custom">
+            <div class="row">
+              <div class="six columns">
+                <h4>Current Account Information</h4>
+                <table class="twelve">
+                  <tbody>
+                    <tr>
+                      <td width="35%"><strong>Account Type</strong></td>
+                      <td width="65%">National Account</td>
+                    </tr>
+                    <tr>
+                      <td width="35%"><strong>Location ID</strong></td>
+                      <td width="65%">198749871643</td>
+                    </tr>
+                    <tr>
+                      <td width="35%"><strong>Email Address</strong></td>
+                      <td width="65%">joesmith@email.com</td>
+                    </tr>
+                    <tr>
+                      <td width="35%"><strong>First Name</strong></td>
+                      <td width="65%">Joseph</td>
+                    </tr>
+                    <tr>
+                      <td width="35%"><strong>Last Name</strong></td>
+                      <td width="65%">Smith</td>
+                    </tr>
+                    <tr>
+                      <td width="35%"><strong>Phone</strong></td>
+                      <td width="65%">(540) 672-0049</td>
+                    </tr>
+                    <tr>
+                      <td width="35%"><strong>Card Number</strong></td>
+                      <td width="65%">**** **** **** 2013</td>
+                    </tr>
+                    <tr>
+                      <td width="35%"><strong>Cardholder's Name</strong></td>
+                      <td width="65%">Joseph Smitheson</td>
+                    </tr>
+                    <tr>
+                      <td width="35%"><strong>Billing Address</strong></td>
+                      <td width="65%">
+                        19101 Address Street Way<br />
+                        Somecity, California 90101
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="six columns">
+                <ul class="accordion">
+                  <li class="active">
+                    <div class="title">
+                      <h4>Edit Your Login Information</h4>
                     </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td width="30%"><label for="location-id"><strong>Location ID</strong></label></td>
-                  <td width="70%"><input type="number" id="location-id" class="seven" placeholder="289273" /></td>
-                </tr>
-              </tbody>
-            </table>
-            <h4>Edit Your Account Information</h4>
-            <table class="twelve">
-              <tbody>
-                <tr>
-                  <td width="30%"><label for="first-name"><strong>First Name</strong></label></td>
-                  <td width="70%"><input type="text" id="first-name" class="seven" placeholder="Joe" /></td>
-                </tr>
-                <tr>
-                  <td width="30%"><label for="last-name"><strong>Last Name</strong></label></td>
-                  <td width="70%"><input type="text" id="last-name" class="seven" placeholder="Smith" /></td>
-                </tr>
-                <tr>
-                  <td width="30%"><label for="phone"><strong>Phone</strong></label></td>
-                  <td width="70%"><input type="tel" id="phone" class="seven" placeholder="(201) 201-0121" /></td>
-                </tr>
-              </tbody>
-            </table>
-            <h4>Edit Your Debit or Credit Card Information</h4>
-            <table class="twelve">
-              <tbody>
-                <tr>
-                  <td width="30%"><label for="card-number"><strong>Card Number</strong></label></td>
-                  <td width="70%"><input type="text" id="card-number" class="seven" placeholder="**** **** **** 2013" /></td>
-                </tr>
-                <tr>
-                  <td width="30%"><label for="card-name"><strong>Cardholder's Name</strong></label></td>
-                  <td width="70%"><input type="text" id="card-name" class="seven" placeholder="Joseph Brosmith" /></td>
-                </tr>
-                <tr>
-                  <td width="30%"><label for="card-exp"><strong>Expiration Date</strong></label></td>
-                  <td width="70%">
-                    <div class="row">
-                      <div class="four columns">
-                        <input type="text" size="4" placeholder="January" />
-                        <div><small>Month</small></div>
-                      </div>
-                      <div class="four columns left" style="float: left;">
-                        <input type="number" size="3" placeholder="2013" />
-                        <div><small>Year</small></div>
-                      </div>
+                    <div class="content">
+                      <table class="twelve">
+                        <tbody>
+                          <tr>
+                            <td width="30%"><label for="login-type"><strong>Account Type</strong></label></td>
+                            <td width="70%">
+                              <select style="display:none;" id="login-type">
+                                <option SELECTED>National Account</option>
+                                <option>This is another option</option>
+                                <option>Look, a third option</option>
+                              </select>
+                              <div class="custom dropdown">
+                                <a href="#" class="current">National Account</a>
+                                <a href="#" class="selector"></a>
+                                <ul>
+                                  <li>National Account</li>
+                                  <li>This is another option</li>
+                                  <li>Look, a third option</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td width="30%"><label for="location-id"><strong>Location ID</strong></label></td>
+                            <td width="70%"><input type="number" id="location-id" class="nine" placeholder="289273" /></td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <h4>Edit Your Billing Address</h4>
-            <table class="twelve">
-              <tbody>
-                <tr>
-                  <td width="30%"><label for="first-name"><strong>Street</strong></label></td>
-                  <td width="70%"><input type="text" id="first-name" class="seven" placeholder="19101 Address Street Way" /></td>
-                </tr>
-                <tr>
-                  <td width="30%"><label for="last-name"><strong>City</strong></label></td>
-                  <td width="70%"><input type="text" id="last-name" class="seven" placeholder="Somecity" /></td>
-                </tr>
-                <tr>
-                  <td width="30%"><label for="billing-state"><strong>State</strong></label></td>
-                  <td width="70%">
-                    <div class="four columns" style="padding-left:0;">
-                      <select style="display:none;" id="billing-state">
-                        <option SELECTED>Alabama</option>
-                        <option></option>
-                        <option></option>
-                      </select>
-                      <div class="custom dropdown" style="width:120px !important;">
-                        <a href="#" class="current">Alabama</a>
-                        <a href="#" class="selector"></a>
-                        <ul>
-                          <li>Alabama</li>
-                          <li></li>
-                          <li></li>
-                        </ul>
-                      </div>
+                  </li>
+                  <li>
+                    <div class="title">
+                      <h4>Edit Your Account Information</h4>
                     </div>
-                    <div class="three columns">
-                      <label for="zip"><strong style="line-height:2.5em;">Zip Code</strong></label>
+                    <div class="content">
+                      <table class="twelve">
+                        <tbody>
+                          <tr>
+                            <td width="30%"><label for="first-name"><strong>First Name</strong></label></td>
+                            <td width="70%"><input type="text" id="first-name" class="nine" placeholder="Joe" /></td>
+                          </tr>
+                          <tr>
+                            <td width="30%"><label for="last-name"><strong>Last Name</strong></label></td>
+                            <td width="70%"><input type="text" id="last-name" class="nine" placeholder="Smith" /></td>
+                          </tr>
+                          <tr>
+                            <td width="30%"><label for="phone"><strong>Phone</strong></label></td>
+                            <td width="70%"><input type="tel" id="phone" class="nine" placeholder="(201) 201-0121" /></td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                    <div class="four columns" style="float: left;">
-                      <input type="number" id="zip" placeholder="90101" />
+                  </li>
+                  <li>
+                    <div class="title">
+                      <h4>Edit Your Debit or Credit Card Information</h4>
                     </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div><input type="submit" class="small radius button yellow right" name="save" value="SAVE" /></div>
+                    <div class="content">
+                      <table class="twelve">
+                        <tbody>
+                          <tr>
+                            <td width="30%"><label for="card-number"><strong>Card Number</strong></label></td>
+                            <td width="70%"><input type="text" id="card-number" class="nine" placeholder="**** **** **** 2013" /></td>
+                          </tr>
+                          <tr>
+                            <td width="30%"><label for="card-name"><strong>Cardholder's Name</strong></label></td>
+                            <td width="70%"><input type="text" id="card-name" class="nine" placeholder="Joseph Brosmith" /></td>
+                          </tr>
+                          <tr>
+                            <td width="30%"><label for="card-exp"><strong>Expiration Date</strong></label></td>
+                            <td width="70%">
+                              <div class="row">
+                                <div class="four columns">
+                                  <input type="text" size="4" placeholder="January" />
+                                  <div><small>Month</small></div>
+                                </div>
+                                <div class="four columns left" style="float: left;">
+                                  <input type="number" size="3" placeholder="2013" />
+                                  <div><small>Year</small></div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">
+                      <h4>Edit Your Billing Address</h4>
+                    </div>
+                    <div class="content">
+                      <table class="twelve">
+                        <tbody>
+                          <tr>
+                            <td width="30%"><label for="first-name"><strong>Street</strong></label></td>
+                            <td width="70%"><input type="text" id="first-name" class="nine" placeholder="19101 Address Street Way" /></td>
+                          </tr>
+                          <tr>
+                            <td width="30%"><label for="last-name"><strong>City</strong></label></td>
+                            <td width="70%"><input type="text" id="last-name" class="nine" placeholder="Somecity" /></td>
+                          </tr>
+                          <tr>
+                            <td width="30%"><label for="billing-state"><strong>State</strong></label></td>
+                            <td width="70%">
+                              <div class="four columns" style="padding-left:0;">
+                                <select style="display:none;" id="billing-state">
+                                  <option SELECTED>Alabama</option>
+                                  <option></option>
+                                  <option></option>
+                                </select>
+                                <div class="custom dropdown" style="width:120px !important;">
+                                  <a href="#" class="current">Alabama</a>
+                                  <a href="#" class="selector"></a>
+                                  <ul>
+                                    <li>Alabama</li>
+                                    <li></li>
+                                    <li></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="four columns">
+                                <label for="zip"><strong style="line-height:2.5em;">Zip Code</strong></label>
+                              </div>
+                              <div class="four columns" style="float: left;">
+                                <input type="number" id="zip" placeholder="90101" />
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </li>
+                </ul>
+                <div><input type="submit" class="small radius button yellow right" name="save" value="SAVE" /></div>
+              </div>
+            </div>
           </form>
         </article>
       </div>

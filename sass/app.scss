@@ -57,6 +57,7 @@ big { text-transform: uppercase; font-size: 1.7em; line-height: 2em; }
 // Headings
 h4 { padding: 6px 8px; background: rgba($highlightColor, 0.3); font-size: 1.25em; color: $black;}
 p + h4 { margin-top: 42px; }
+h4:first-child { margin-top: 0; }
 
 
 // Forms
@@ -70,11 +71,15 @@ body.public .page-content textarea { margin: 8px 0 16px; padding: 6px 8px; backg
 form.custom div.custom.dropdown,
 table input[type="text"], table input[type="password"], table input[type="date"], table input[type="datetime"], table input[type="email"], table input[type="number"], table input[type="search"], table input[type="tel"], table input[type="time"], table input[type="url"], table textarea { margin-bottom: 0; line-height: inherit; }
 
-tr td:first-child label strong { line-height: 2.1em; }
 
-body.private table { margin-top: 17px; }
+// Tables
+tr td:first-child label strong { line-height: 2.1em; }
+table:not(.activity-table) tr td:first-child { text-align: right; }
+table:not(.activity-table) tr td:first-child strong { display: inline-block; margin-right: 10px; }
+//body.private table { margin-top: 17px; }
 body.private table th,
-body.private table td { font-size: .8em; }
+body.private table td,
+body.private table td label { font-size: 12px; }
 th[data-sort]{ cursor: pointer; }
 th .arrow { float: right; font-weight: bold; color: maroon; font-size: 1.3em; margin-top: -3px; }
 th[class*='sorting-'] { background-color: #ddd; }
@@ -83,20 +88,31 @@ th[class*='sorting-'] { background-color: #ddd; }
 // Lists
 
 
+// Accordion overrides
+ul.accordion,
+ul.accordion > li,
+ul.accordion > li.active,
+ul.accordion > li .content,
+ul.accordion > li.active .content,
+ul.accordion > li > div.title { padding: 0 !important; border: 0 !important; }
+ul.accordion > li > div.title { padding: inherit; background: rgba($highlightColor, 0.3); }
+ul.accordion > li > div.title::after, 
+ul.accordion > li.active .title::after { top: 10px; }
 
 // Internal
 body.internal { background: $white url(../images/internal-bg.png) 0 0 repeat-x; }
 
 
 // Content
-.page-content { background: url(../images/page-content-bg.png) center top no-repeat; padding-bottom: 60px; }
 .page-title { margin: 14px 18px 28px; padding: 20px; background: $secondaryColor url(../images/page-title-bg.jpg) right top no-repeat; font-size: 2.15em; color: $white; }
 .sub-title { margin: 14px 20px 28px; padding-bottom: 18px; border-bottom: 1px dotted rgba(0, 0, 0, 0.2); font-size: 1.25em; }
+
+.page-content { background: url(../images/page-content-bg.png) center top no-repeat; padding-bottom: 60px; }
 .page-content article { padding: 0 20px; }
 .page-content strong { color: $black; }
 .page-content a { color: $secondaryColor; font-weight: bold; }
 
-body.private.internal .page-content article { padding: 0; }
+body.private.internal .page-content article {  }
 body.private.internal .sub-title { margin-bottom: 0; }
 
 
@@ -170,7 +186,7 @@ header { padding-top: 14px; }
 #support-links a { font-weight: bold; color: $txtColor; font-size: .95em; }
 #support-links i { color: $txtColor; font-size: 1em; }
 
-.user-menu { display: inline-block; margin: 15px 15px 0 0; padding: 10px; float: right; background: $white; @include border-radius(5px); @include box-shadow( rgba(0, 0, 0, 0.4) 0 1px 5px inset ); }
+.user-menu { display: inline-block; margin: 15px 15px 0 0; float: right; }
 .user-menu ul { list-style: none; margin: 0; @include border-radius(5px); background: transparent url(../images/login-register-btn-bg.png) center center no-repeat; overflow: hidden; float: right; clear: right; @include box-shadow( rgba(0, 0, 0, 0.1) 0 -1px 2px, rgba(0, 0, 0, 0.2) 0 1px 5px, rgba(255, 255, 255, 0.8) 0 1px 0 inset,  rgba(0, 0, 0, 0.3) 0 1px 1px ); }
 .user-menu li { float: left; text-align: center; }
 .user-menu  li a { display: block; padding: 11px 18px; font-size: .9em; font-weight: bold; text-transform: uppercase; color: $white; @include text-shadow(0px -1px 0px rgba(0, 0, 0, 0.5)); }
@@ -314,16 +330,30 @@ body#contact-us .dropdown { margin-bottom: 16px; }
 
 
 // My Account
+body#account-information .accordion h4 { font-size: .9em; padding: 9px 10px; }
+
 .menu-title strong { display: block; padding: 8px 12px; background: $highlightColor; color: $white; }
-#account-menu li { margin: 0; }
+#account-menu dl { margin: 30px 0; border-left: 1px solid #ddd; }
+#account-menu dd { border-right: 1px solid rgba(0, 0, 0, 0.3); border-left: 1px solid rgba(255, 255, 255, 0.3); border-top: 1px solid #ddd; }
+#account-menu dd.active { border-top: 3px solid $secondaryColor; }
 #account-menu a { position: relative; background: #eee; font-size: .825em; line-height: 3.5em; padding-left: 23px; color:  $txtColor; }
 #account-menu a:after { left: 12px; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(161, 64, 55, 0); border-left-color: #a14037; border-width: 5px; top: 50%; margin-top: -5px; }
 
 #account-menu a:hover, 
-#account-menu li.active a { background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #f6f6f6, vertical); @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%)); color: $mainColor; @include text-shadow(0px 1px 0px $white); }
+#account-menu .active a { background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #f6f6f6, vertical); @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%)); color: $mainColor; @include text-shadow(0px 1px 0px $white); }
 
+#account-menu .tabs dd a { border-left: 1px solid transparent; border-right: 1px solid transparent; }
+
+#account-content { padding: 20px 0; border: 1px solid #ddd; border-top: 0; }
+
+.activity-table { width: 100%; }
 .activity-table th { position: relative; color: $secondaryColor; }
-.activity-table th:after { position: absolute; top: 40%; right: 10px; display: block; width: 10px; height: 15px; content: '\2b0d'; font-size: 18px; color: $txtColor; }
+.activity-table th:after { position: absolute; top: 25%; right: 7px; display: block; width: 10px; height: 15px; content: '\2b0c'; font-size: 18px; color: #ccc; font-family: 'fontello'; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-align: center; }
+.activity-table th.sorting-desc:after,
+.activity-table th.sorting-asc:after { content: '\2193'; color: $secondaryColor; font-family: 'fontello'; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-align: center; }
+.activity-table th.sorting-asc:after { content: '\2191'; }
+th .arrow { display: none !important; }
+
 #history-table th { position: relative; width: 12.25%; color: #9e2f22; }
 #billing-table th { position: relative; width: 25%; color: #9e2f22; }
 
@@ -346,6 +376,9 @@ h4 + table { margin-top: -14px; @include border-radius(0 0 3px 3px); }
 
 
 // My Credits
+.credit-balance { float: right; font-size: .9em; }
+.credit-balance span { color: $secondaryColor; }
+
 .block a { margin: 3px 6px 9px; padding: 10px 0; @include border-radius(10px); border: 3px solid #eee; text-align: center; }
 .block * { display: block; clear: both; width: auto; margin: 0 auto; line-height: 1.1em; }
 .block .credit-qty { font-size: 2.2em; font-weight: bold; }
