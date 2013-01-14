@@ -7267,22 +7267,29 @@ h4 + table {
   line-height: 2.4em;
 }
 
+/* line 400, ../sass/app.scss */
+.stagger {
+  margin-bottom: 30px !important;
+  padding-bottom: 30px !important;
+  border-bottom: 1px dotted #ddd;
+}
+
 /* Very large screens */
 @media only screen and (min-width: 1441px) {
-  /* line 402, ../sass/app.scss */
+  /* line 406, ../sass/app.scss */
   #hero-wrapper div.orbit-wrapper div.timer {
     bottom: 9px;
     right: 42%;
   }
 
-  /* line 403, ../sass/app.scss */
+  /* line 407, ../sass/app.scss */
   #hero-wrapper ul.orbit-bullets {
     bottom: -7px;
   }
 }
 /* Medium screens */
 @media only screen and (max-width: 1279px) and (min-width: 768px) {
-  /* line 408, ../sass/app.scss */
+  /* line 412, ../sass/app.scss */
   .top-bar ul > li.toggle-topbar a {
     height: 46px;
     width: 46px;
@@ -7293,26 +7300,26 @@ h4 + table {
     top: 0%;
   }
 
-  /* line 409, ../sass/app.scss */
+  /* line 413, ../sass/app.scss */
   #hero-wrapper div.orbit-wrapper div.timer {
     bottom: 9px;
     right: 42%;
   }
 
-  /* line 410, ../sass/app.scss */
+  /* line 414, ../sass/app.scss */
   #hero-wrapper ul.orbit-bullets {
     bottom: -7px;
   }
 }
 /* Medium screens */
 @media only screen and (max-width: 960px) and (min-width: 768px) {
-  /* line 415, ../sass/app.scss */
+  /* line 419, ../sass/app.scss */
   .top-bar ul > li a.active {
     background-color: transparent;
     color: white;
   }
 
-  /* line 416, ../sass/app.scss */
+  /* line 420, ../sass/app.scss */
   .top-bar ul > li.toggle-topbar a {
     height: 46px;
     width: 46px;
@@ -7323,7 +7330,7 @@ h4 + table {
     top: 0%;
   }
 
-  /* line 418, ../sass/app.scss */
+  /* line 422, ../sass/app.scss */
   #hero-wrapper div.orbit-wrapper div.slider-nav span.right,
   #hero-wrapper div.orbit-wrapper div.slider-nav span.left {
     display: none;
@@ -7331,19 +7338,19 @@ h4 + table {
 }
 /* Small screens */
 @media only screen and (max-width: 767px) {
-  /* line 423, ../sass/app.scss */
+  /* line 427, ../sass/app.scss */
   .top-bar ul > li a:not(.button) {
     padding: 0 8px;
     font-size: 1.2em;
   }
 
-  /* line 424, ../sass/app.scss */
+  /* line 428, ../sass/app.scss */
   .top-bar ul > li a.active {
     background-color: transparent;
     color: white;
   }
 
-  /* line 425, ../sass/app.scss */
+  /* line 429, ../sass/app.scss */
   .top-bar ul > li.toggle-topbar a {
     height: 36px;
     width: 36px;
@@ -7354,14 +7361,14 @@ h4 + table {
     top: 0%;
   }
 
-  /* line 429, ../sass/app.scss */
+  /* line 433, ../sass/app.scss */
   #hero-wrapper .timer, #hero-wrapper .mask, #hero-wrapper .slider-nav, #hero-wrapper .orbit-bullets,
   #hero-wrapper div.orbit-wrapper div.slider-nav span.right,
   #hero-wrapper div.orbit-wrapper div.slider-nav span.left {
     display: none;
   }
 
-  /* line 430, ../sass/app.scss */
+  /* line 434, ../sass/app.scss */
   #hero a {
     margin: 0;
   }

@@ -6,18 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>hireGEMS | immediate and accurate knowledge about how a person will behave on the job.</title>
   <link rel="stylesheet" href="/stylesheets/app.css">
-  <link rel="stylesheet" href="http://googleplus-activity-widget.googlecode.com/svn/v1/light.css">
   <script src="/javascripts/foundation/modernizr.foundation.js"></script>
 </head>
-<body id="contact-us" class="public internal">
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=263520433660508";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+<body id="products" class="public internal">
   <header>
     <div id="brand">
       <div class="row">
@@ -51,10 +42,10 @@
             <li class="divider"></li>
             <li id="nav-home"><a href="/">Home</a></li> <li class="divider"></li>
             <li id="nav-what-we-do"><a href="/what-we-do/">What We Do</a></li> <li class="divider"></li>
-            <li id="nav-begin-launches"><a href="/products/">Products</a></li> <li class="divider"></li>
+            <li id="nav-begin-launches"><a href="/products/" class="active">Products</a></li> <li class="divider"></li>
             <li id="nav-services"><a href="/services/">Services</a></li> <li class="divider"></li>
             <li id="nav-faq"><a href="/faq/">FAQ</a></li> <li class="divider"></li>
-            <li id="nav-contact-us"><a href="/contact-us/" class="active">Contact Us</a></li> <li class="divider"></li>
+            <li id="nav-contact-us"><a href="/contact-us/">Contact Us</a></li> <li class="divider"></li>
             <li class="toggle-topbar"><a href="#" class="icon-list"></a></li>
           </ul>
         </div>
@@ -64,56 +55,33 @@
   <div id="main" role="main">
     <div class="row page-content">
       <div class="twelve columns">
-        <hgroup>
-          <h2 class="page-title">Contact Us</h2>
-          <h3 class="sub-title">Got questions, thoughts, or ideas? Tell us.</h3>
-        </hgroup>
+        <h2 class="page-title">Products</h2>
         <article>
-          <div class="row">
-            <div class="six columns">
-              <form class="custom">
-                <label>Your Name<span class="required">*</span></label>
-                <input type="text" />
-                <label>Email Address<span class="required">*</span></label>
-                <input type="email" class="twelve" />
-                <label>Phone Number<span class="required">*</span></label>
-                <input type="tel" />
-                <label for="customDropdown">Topic<span class="required">*</span></label>
-                <select style="display:none;" id="customDropdown">
-                  <option SELECTED>Sales Visit</option>
-                  <option>This is another option</option>
-                  <option>Look, a third option</option>
-                </select>
-                <div class="custom dropdown">
-                  <a href="#" class="current">Sales Visit</a>
-                  <a href="#" class="selector"></a>
-                  <ul>
-                    <li>Sales Visit</li>
-                    <li>This is another option</li>
-                    <li>Look, a third option</li>
-                  </ul>
-                </div>
-                <label>Your Message<span class="required">*</span></label>
-                <textarea rows="10"></textarea>
-                <input type="submit" class="small radius button glass right" value="Submit" />
-              </form>
-              <p><big>Contact</big><br>P.O. Box 110550<br>Naples, FL 34120<br><a href="#">info@hiregems.com</a></p>
+            <div itemscope itemtype="http://schema.org/Product" class="row stagger">
+              <img src="../images/TryFree.jpg" class="four columns" />
+              <div class="eight columns">
+                <h5>Base Applic &mdash; Perfect for Every HR Manager</h5>
+                <p itemprop="description">The Applic™ is the hireGEMS® brief employment application. The Applic™ is designed for fast completion by the applicant on a tablet or computer. The applicant can easily complete it with their personal information from memory while in your place of business. Donec id elit non mi porta gravida at eget metus. <a href="#">See Sample Report</a></p>
+                <a href="#" class="medium radius button glass">Launch this Applic™</a>
+              </div>
             </div>
-            <aside class="four columns offset-by-two">
-              <div class="widget">
-                <p><big>@hireGEMS</big></p>
-                <a class="twitter-timeline" href="https://twitter.com/hireGEMS" data-widget-id="290637653999755264">Tweets by @hireGEMS</a>
+            <div itemscope itemtype="http://schema.org/Product" class="row stagger">
+              <img src="../images/PsychMetrics.jpg" class="four columns push-eight" />
+              <div class="eight columns pull-four">
+                <h5>WE &mdash; Work Ethic and Integrity</h5>
+                <p itemprop="description">Does the candidate have the social skills and interest to treat customers with respect and resolve their problems? Can he/she help not only service your customers well but keep them coming back? <a href="#">See Sample Report</a></p>
+                <a href="#" class="medium radius button glass">Launch this Applic™</a>
               </div>
-              <div class="widget">
-                <p><big>Facebook</big></p>
-                <div class="fb-like-box" data-href="http://www.facebook.com/Hiregems" data-width="290" data-height="190" data-show-faces="true" data-stream="false" data-border-color="#ffffff" data-header="false"></div>
+            </div>
+            <div itemscope itemtype="http://schema.org/Product" class="row stagger">
+              <img src="../images/CostlyHire.jpg" class="four columns" />
+              <div class="eight columns">
+                <h5>CS &mdash; Customer Service</h5>
+                <p itemprop="description">Does the person have the behaviors of confidence, dealing with problems in a pro-active way, and positively influencing others? Can that person help develop and manage people? <a href="#">See Sample Report</a></p>
+                <a href="#" class="medium radius button glass">Launch this Applic™</a>
               </div>
-              <div class="widget">
-                <p><big>Google+</big></p>
-                <div class="google-plus-activity" data-options="{ user: '101455351209056663502' }"></div>
-              </div>
-            </aside>
-          </div>
+            </div>
+
         </article>
       </div>
     </div><!-- .row.page-content -->
@@ -210,6 +178,28 @@
     </div>
   </div>
 
+  <div class="reveal-modal medium login-required">
+    <div class="alert-box alert">WARNING</div>
+    <div class="panel">
+      <p>You must be logged in to perform this action.</p>
+    </div>
+    <div class="five columns centered">
+      <a href="/login/" class="small radius button glass">Log In Now</a>
+    </div>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+
+  <div class="reveal-modal medium credits-required">
+    <div class="alert-box alert">WARNING</div>
+    <div class="panel">
+      <p>You need 6 more credits to perform this action.</p>
+    </div>
+    <div class="three columns centered">
+      <a href="/my-account/my-credits/" class="small radius button glass">Buy Credits</a>
+    </div>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+
   <script src="/javascripts/foundation/jquery.js"></script>
   <script src="/javascripts/foundation/jquery.cookie.js"></script>
   <script src="/javascripts/foundation/jquery.event.move.js"></script>
@@ -233,8 +223,6 @@
   <script src="/javascripts/public.js"></script>
   <script src="/javascripts/app.js"></script>
   <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50e958302d5baa49&domready=1" defer="defer"></script>
-  <script src="//googleplus-activity-widget.googlecode.com/files/jquery.googleplus-activity-1.0.min.js" defer="defer"></script>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 </body>
 </html>
