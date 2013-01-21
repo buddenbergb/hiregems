@@ -7278,18 +7278,6 @@ h4 + table {
 }
 
 /* Very large screens */
-@media only screen and (min-width: 1441px) {
-  /* line 407, ../sass/app.scss */
-  #hero-wrapper div.orbit-wrapper div.timer {
-    bottom: 9px;
-    right: 42%;
-  }
-
-  /* line 408, ../sass/app.scss */
-  #hero-wrapper ul.orbit-bullets {
-    bottom: -7px;
-  }
-}
 /* Medium screens */
 @media only screen and (max-width: 1279px) and (min-width: 768px) {
   /* line 413, ../sass/app.scss */
@@ -7301,17 +7289,6 @@ h4 + table {
     right: 20px;
     margin: 0;
     top: 0%;
-  }
-
-  /* line 414, ../sass/app.scss */
-  #hero-wrapper div.orbit-wrapper div.timer {
-    bottom: 9px;
-    right: 42%;
-  }
-
-  /* line 415, ../sass/app.scss */
-  #hero-wrapper ul.orbit-bullets {
-    bottom: -7px;
   }
 }
 /* Medium screens */
