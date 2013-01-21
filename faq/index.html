@@ -109,50 +109,50 @@
             <li><a href="/contact-us/">Contact Us</a></li>
           </ul><!-- #footer-nav -->
         </nav>
-        <div id="download-cta" class="four columns">
+        <div id="download-cta" class="five columns mobile-four">
           <div class="panel callout radius">
             <h5>Download Mobile Application</h5>
             <div class="row">
               <div class="twelve columns">
-                <img src="/images/download-cta-android.jpg" class="device-android left" />
-                <img src="/images/download-cta-ios.jpg" class="device-ios left" />
-                <img src="/images/download-cta-any.jpg" class="device-any left" />
-
-                <p>All the hireGEMS features and more on your tablet. Get the hireGEMS&trade; app for your <span class="device-ios">iOS&reg;</span><span class="device-android">Android&reg;</span><span class="device-any">Android&reg; or iOS&reg;</span> device. </p>
-                <a class="small radius button glass" href="#">Download</a>
+                <div class="row">
+                  <img src="/images/download-cta-android.jpg" class="six columns mobile-four device-android" />
+                  <img src="/images/download-cta-ios.jpg" class="six columns mobile-four device-ios" />
+                  <img src="/images/download-cta-any.jpg" class="six columns mobile-four device-other" />
+  
+                  <p class="six columns mobile-four">All the hireGEMS features and more on your tablet. Get the hireGEMS&trade; app for your <span class="device-ios">iOS&reg;</span><span class="device-android">Android&reg;</span><span class="device-other">Android&reg; or iOS&reg;</span> device.</p>
+                  <a class="five columns centered mobile-four small radius button glass" href="#">Download</a>
+                </div>
               </div>
             </div><!-- .row -->
           </div>
         </div><!-- #download-cta -->
-        <div class="four columns">
+        <div class="three columns mobile-four">
           <h5>Sign Up for Our Newsletter</h5>
-          <form action="http://traitset.us6.list-manage1.com/subscribe/post?u=a75c75de3c298f467ca92608a&amp;id=27ad73383b" method="post" id="newsletter-signup" name="newsletter-signup" target="_blank" novalidate>
-            <div class="row">
-              <div class="three mobile-one columns">
-                <label class="right inline">Name:</label>
-              </div>
-              <div class="nine mobile-three columns">
-                <input type="text" class="eleven" name="FNAME" />
-              </div>
-            </div><!-- .row -->
-            <div class="row">
-              <div class="three mobile-one columns">
-                <label class="right inline">Email:</label>
-              </div>
-              <div class="nine mobile-three columns">
-                <input type="text" class="eleven" name="EMAIL" />
-              </div>
-            </div><!-- .row -->
-            <div class="row">
-              <div class="two mobile-one columns offset-by-eight">
-                <input type="submit" class="small radius button glass" name="subscribe" value="Sign Up" />
-              </div>
-            </div><!-- .row -->
+          <form action="http://traitset.us6.list-manage1.com/subscribe/post?u=a75c75de3c298f467ca92608a&amp;id=27ad73383b" method="post" id="newsletter-signup" class="row" name="newsletter-signup" target="_blank" novalidate>
+            <div class="divider">&nbsp;</div>
+            <div class="twelve columns">
+              <div class="row">
+                <label for="FNAME">Name:</label>
+                <input type="text" id="FNAME" class="five columns" name="FNAME" placeholder="First Name" />
+                <input type="text" id="LNAME" class="five columns" name="LNAME" placeholder="Last Name" />
+              </div><!-- .row -->
+            </div>
+            <div class="twelve columns">
+              <div class="row">
+                <label for="EMAIL">Email:</label>
+                <input type="email" id="EMAIL" class="twelve columns" name="EMAIL" placeholder="email@email.com" />
+              </div><!-- .row -->
+            </div> <div class="divider">&nbsp;</div>
+            <div class="twelve columns">
+              <div class="row">
+                <input type="submit" class="six columns centered mobile-three small radius button glass" name="subscribe" value="Sign Up" />
+              </div><!-- .row -->
+            </div>
           </form><!-- #newsletter-signup -->
         </div>
-        <nav class="two columns">
+        <nav class="two columns mobile-four">
           <h5>Connect With Us</h5>
-          <ul id="social-nav" class="nav-bar vertical">
+          <ul id="social-nav" class="nav-bar vertical cf">
             <li><a href="//www.facebook.com/Hiregems"><i class="icon-facebook-circled"></i> Facebook</a></li>
             <li><a href="//www.twitter.com/hiregems"><i class="icon-twitter-circled"></i> Twitter</a></li>
             <li><a href="//plus.google.com/u/1/101455351209056663502"><i class="icon-gplus-circled"></i> Google+</a></li>
@@ -175,7 +175,6 @@
       </div>
     </div><!-- .row -->
   </div><!-- #legal -->
-
   <div class="click-share hide-for-medium-down">
     <a class="handle" href="#">Click &amp; Share</a>
     <div class="addthis_toolbox">
@@ -184,7 +183,6 @@
       <a class="addthis_button_google_plusone" g:plusone:size="tall"></a>
     </div>
   </div>
-
   <script src="/javascripts/foundation/jquery.js"></script>
   <script src="/javascripts/foundation/jquery.cookie.js"></script>
   <script src="/javascripts/foundation/jquery.event.move.js"></script>
@@ -205,6 +203,7 @@
   <script src="/javascripts/foundation/jquery.foundation.topbar.js"></script>
   <script src="/javascripts/foundation/jquery.placeholder.js"></script>
   <script src="/javascripts/jquery.tabSlideOut.v1.3.js"></script>
+  <script src="/javascripts/browserDetect.js"></script>
   <script src="/javascripts/public.js"></script>
   <script src="/javascripts/app.js"></script>
   <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50e958302d5baa49&domready=1" defer="defer"></script>
