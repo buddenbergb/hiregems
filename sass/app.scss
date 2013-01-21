@@ -222,20 +222,26 @@ body.private #login-register { display: none; }
 #colophon h5 { font-size: 1em; color: $highlightColor; }
 #colophon .nav-bar,
 #colophon nav li:hover { background: none; }
-#colophon nav li { border: 0; line-height: 2.6em; }
+#colophon nav li { border: 0; }
 #colophon nav a { padding: 0; font-size: .9em; color: $white; }
 #colophon nav a:hover { color: $highlightColor; }
-#colophon label { margin-bottom: 0; color: $white; }
-#colophon input[type=text] { background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: $white; }
+#colophon label { color: $white; }
+#colophon input[type=text],
+#colophon input[type=email] { background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: $white; }
+#colophon input[type=text] { width: 46.66667%; }
+#colophon .button { display: block; }
 
-#footer-nav li { border-bottom: 1px dotted rgba(255, 255, 255, 0.5) !important; line-height: 2.1em !important; }
+#footer-nav li { border-bottom: 1px dotted rgba(255, 255, 255, 0.5) !important; line-height: 2.55em; }
 
 #download-cta .panel.callout { background-color: $secondaryColor; }
 #download-cta h5 { margin: -20px -20px 15px -20px; padding: 10px 15px; border-bottom: 1px solid #802822; background: #93342c; }
 #download-cta p { font-size: .85em; line-height: 1.4em; }
-#download-cta .panel.callout .button { display: block; }
+#download-cta .panel.callout .button { margin-right: 5%; }
 #download-cta .panel.callout .button,
 #download-cta .panel.callout .button:hover { background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #f6f6f6, vertical); @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%)); }
+
+#newsletter-signup .button { padding: 7px 14px 8px; float: none; color: $mainColor; }
+.row form#newsletter-signup .row .columns:first-child {  }
 
 #social-nav i { font-size: 2.4em; line-height: .3em; color: $txtColor; }
 #social-nav a:hover i { color: $highlightColor; }
@@ -435,6 +441,11 @@ h4 + table { margin-top: -14px; @include border-radius(0 0 3px 3px); }
   body#services .ad-title,
   body#services .ad-content { padding: 20px; margin: 0; }
   body#services .ad-content { padding-top: 0; padding-bottom: 30px; }
+
+  #download-cta .panel.callout .button { padding: 11px 14px 12px; margin-right: 0; }
+  
+  #social-nav li { width: 45%; float: left; }
+  #social-nav li:nth-child(odd) { margin-right: 5%; }
 }
 
 /* Landscape Orientation */
