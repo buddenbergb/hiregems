@@ -225,7 +225,7 @@ body.private #login-register { display: none; }
 #colophon nav li { border: 0; line-height: 2.6em; }
 #colophon nav a { padding: 0; font-size: .9em; color: $white; }
 #colophon nav a:hover { color: $highlightColor; }
-#colophon label { color: $white; }
+#colophon label { margin-bottom: 0; color: $white; }
 #colophon input[type=text] { background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: $white; }
 
 #footer-nav li { border-bottom: 1px dotted rgba(255, 255, 255, 0.5) !important; line-height: 2.1em !important; }

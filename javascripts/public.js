@@ -78,4 +78,43 @@ $(document).ready(function() {
     }
   });
 
+  var isMobile = {
+      Android: function() {
+          return navigator.userAgent.match(/Android/i);
+      },
+      BlackBerry: function() {
+          return navigator.userAgent.match(/BlackBerry/i);
+      },
+      iOS: function() {
+          return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+      },
+      Opera: function() {
+          return navigator.userAgent.match(/Opera Mini/i);
+      },
+      Windows: function() {
+          return navigator.userAgent.match(/IEMobile/i);
+      },
+      other: function() {
+          return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+      }
+  };
+  
+  console.log(isMobile);
+  
+  if (isMobile.iOS) {
+    $('.device-iOS').show();
+  } else {
+    
+    if (isMobile.Android) {
+      $('.device-android').show();
+    
+    } else { 
+      $('.device-other').show();
+    
+    };
+  
+  };
+
 });
+
+

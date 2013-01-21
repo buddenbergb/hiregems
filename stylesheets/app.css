@@ -6569,6 +6569,7 @@ body.private #login-register {
 
 /* line 228, ../sass/app.scss */
 #colophon label {
+  margin-bottom: 0;
   color: white;
 }
 
