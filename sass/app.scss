@@ -233,15 +233,16 @@ body.private #login-register { display: none; }
 #download-cta .panel.callout { background-color: $secondaryColor; }
 #download-cta h5 { margin: -20px -20px 15px -20px; padding: 10px 15px; border-bottom: 1px solid #802822; background: #93342c; }
 #download-cta p { font-size: .85em; line-height: 1.4em; }
+#download-cta .panel.callout .button { display: block; }
 #download-cta .panel.callout .button,
 #download-cta .panel.callout .button:hover { background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #f6f6f6, vertical); @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%)); }
 
 #social-nav i { font-size: 2.4em; line-height: .3em; color: $txtColor; }
 #social-nav a:hover i { color: $highlightColor; }
 
-.device-iOS,
+.device-ios,
 .device-android,
-.device-any { display: none; }
+.device-other { display: none; }
 
 ul.inline-list > li.brands { margin-left: 5px; }
 

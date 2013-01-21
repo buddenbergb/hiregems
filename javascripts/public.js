@@ -78,6 +78,7 @@ $(document).ready(function() {
     }
   });
 
+/*
   var isMobile = {
       Android: function() {
           return navigator.userAgent.match(/Android/i);
@@ -114,6 +115,22 @@ $(document).ready(function() {
     };
   
   };
+*/
+
+  //console.log(BrowserDetect.OS);
+  
+  if (BrowserDetect.OS == 'iPhone/iPod')
+  {
+    $('.device-ios').show();
+  }
+  else if (BrowserDetect.OS == 'Linux')
+  {
+    $('.device-android').show();
+  }
+  else
+  {
+    $('.device-other').show();
+  }
 
 });
 
