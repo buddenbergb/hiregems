@@ -320,10 +320,10 @@ body#home { background: $white url(../images/home-bg.png) 0 0 repeat-x; }
 
 
 // Services
-body#services .ad { background: $secondaryColor url(../images/services-ad.jpg) right top no-repeat; }
+body#services .ad { background-color: $secondaryColor; }
 body#services .ad-cta { width: 34%; padding: 40px 70px 0 0; float: right; font-size: 1.55em; line-height: 1.3em; text-align: center; color: $secondaryColor; }
-body#services .ad-title { width: 40%; padding: 30px 0 0 50px; float: left; font-size: 2.3em; font-style: italic; }
-body#services .ad-content { width: 40%; padding: 0 0 30px 50px; float: left; line-height: 1.4em; clear: left; }
+body#services .ad-title { padding-top: 30px; font-size: 2.3em; font-style: italic; }
+body#services .ad-content { line-height: 1.4em; }
 
 
 // Contact Us
@@ -431,6 +431,9 @@ h4 + table { margin-top: -14px; @include border-radius(0 0 3px 3px); }
   #hero-wrapper div.orbit-wrapper div.slider-nav span.left { display: none; }
   #hero a { margin: 0; }
   
+  body#services .ad-title,
+  body#services .ad-content { padding: 20px; margin: 0; }
+  body#services .ad-content { padding-top: 0; padding-bottom: 30px; }
 }
 
 /* Landscape Orientation */
