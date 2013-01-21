@@ -404,15 +404,12 @@ h4 + table { margin-top: -14px; @include border-radius(0 0 3px 3px); }
 
 /* Very large screens */
 @media only screen and (min-width: 1441px) {
-  // #hero-wrapper div.orbit-wrapper div.timer { bottom: 9px; right: 42%; }
-  // #hero-wrapper ul.orbit-bullets { bottom: -7px; }
+
 }
 
 /* Medium screens */
 @media only screen and (max-width: 1279px) and (min-width: 768px) {
   .top-bar ul > li.toggle-topbar a { height: 46px; width: 46px; border: 0; font-size: 3em; right: 20px; margin: 0; top: 0%; }
-  // #hero-wrapper div.orbit-wrapper div.timer { bottom: 9px; right: 42%; }
-  // #hero-wrapper ul.orbit-bullets { bottom: -7px; }
 }
 
 /* Medium screens */

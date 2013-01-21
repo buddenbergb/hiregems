@@ -7280,7 +7280,7 @@ h4 + table {
 /* Very large screens */
 /* Medium screens */
 @media only screen and (max-width: 1279px) and (min-width: 768px) {
-  /* line 413, ../sass/app.scss */
+  /* line 412, ../sass/app.scss */
   .top-bar ul > li.toggle-topbar a {
     height: 46px;
     width: 46px;
@@ -7293,13 +7293,13 @@ h4 + table {
 }
 /* Medium screens */
 @media only screen and (max-width: 960px) and (min-width: 768px) {
-  /* line 420, ../sass/app.scss */
+  /* line 417, ../sass/app.scss */
   .top-bar ul > li a.active {
     background-color: transparent;
     color: white;
   }
 
-  /* line 421, ../sass/app.scss */
+  /* line 418, ../sass/app.scss */
   .top-bar ul > li.toggle-topbar a {
     height: 46px;
     width: 46px;
@@ -7310,7 +7310,7 @@ h4 + table {
     top: 0%;
   }
 
-  /* line 423, ../sass/app.scss */
+  /* line 420, ../sass/app.scss */
   #hero-wrapper div.orbit-wrapper div.slider-nav span.right,
   #hero-wrapper div.orbit-wrapper div.slider-nav span.left {
     display: none;
@@ -7318,19 +7318,19 @@ h4 + table {
 }
 /* Small screens */
 @media only screen and (max-width: 767px) {
-  /* line 428, ../sass/app.scss */
+  /* line 425, ../sass/app.scss */
   .top-bar ul > li a:not(.button) {
     padding: 0 8px;
     font-size: 1.2em;
   }
 
-  /* line 429, ../sass/app.scss */
+  /* line 426, ../sass/app.scss */
   .top-bar ul > li a.active {
     background-color: transparent;
     color: white;
   }
 
-  /* line 430, ../sass/app.scss */
+  /* line 427, ../sass/app.scss */
   .top-bar ul > li.toggle-topbar a {
     height: 36px;
     width: 36px;
@@ -7341,14 +7341,14 @@ h4 + table {
     top: 0%;
   }
 
-  /* line 434, ../sass/app.scss */
+  /* line 431, ../sass/app.scss */
   #hero-wrapper .timer, #hero-wrapper .mask, #hero-wrapper .slider-nav, #hero-wrapper .orbit-bullets,
   #hero-wrapper div.orbit-wrapper div.slider-nav span.right,
   #hero-wrapper div.orbit-wrapper div.slider-nav span.left {
     display: none;
   }
 
-  /* line 435, ../sass/app.scss */
+  /* line 432, ../sass/app.scss */
   #hero a {
     margin: 0;
   }
