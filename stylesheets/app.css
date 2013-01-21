@@ -6959,15 +6959,16 @@ body#services .ad-cta {
 /* line 324, ../sass/app.scss */
 body#services .ad-title {
   width: 40%;
-  padding: 40px 0 0 60px;
+  padding: 30px 0 0 50px;
   float: left;
+  font-size: 2.3em;
   font-style: italic;
 }
 
 /* line 325, ../sass/app.scss */
 body#services .ad-content {
   width: 40%;
-  padding: 0 0 30px 60px;
+  padding: 0 0 30px 50px;
   float: left;
   line-height: 1.4em;
   clear: left;
