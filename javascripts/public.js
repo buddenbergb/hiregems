@@ -38,7 +38,7 @@ $(document).ready(function() {
     advanceSpeed: 8000,
     captions: false,
     bullets: true,
-    fluid: '16x8'
+    fluid: '16x10'
   });
 
   $('#customer-logos, #partner-logos').orbit({
