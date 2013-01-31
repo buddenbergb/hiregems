@@ -1,0 +1,333 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"lorem",
+				"lorem	lorem - Medium paragraph <p>"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 115.0,
+		"selected_items":
+		[
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"git",
+				"Git: Commit"
+			],
+			[
+				"git ad",
+				"Git: Add Current File"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"enco",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				" git c",
+				"Git: Commit"
+			],
+			[
+				" git ",
+				"Git: Commit"
+			],
+			[
+				"enc",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"encod",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"encode",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"git ig",
+				"Gitignore: New gitingore"
+			],
+			[
+				"proje",
+				"Project: Save As"
+			],
+			[
+				"repl shel",
+				"SublimeREPL: Shell"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"terminal",
+				"Preferences: Terminal Settings – Default"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"clip",
+				"Clipboard History"
+			],
+			[
+				"boile",
+				"Github: Open File"
+			],
+			[
+				"quick",
+				"Quick File Creator: Create file"
+			],
+			[
+				"start",
+				"Guard: Start Guard"
+			],
+			[
+				"jqu",
+				"Snippet: jQuery.trim"
+			],
+			[
+				"jq",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				"fetch",
+				"Fetch: Package"
+			],
+			[
+				"fetc",
+				"Fetch: Manage"
+			],
+			[
+				"inst	",
+				"Package Control: Install Package"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 588.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/leepeterson/Dropbox/apps/site44/hiregems.site44.com/javascripts/public.js",
+		"/Users/leepeterson/Dropbox/Apps/site44/hiregems.site44.com/javascripts/public.js",
+		"/Users/leepeterson/Dropbox/Apps/site44/hiregems.site44.com/contact-us/index.html",
+		"/Users/leepeterson/Dropbox/Apps/site44/hiregems.site44.com/404/index.html",
+		"/Users/leepeterson/Dropbox/Apps/site44/hiregems.site44.com/index.html",
+		"/Users/leepeterson/Dropbox/Apps/site44/hiregems.site44.com/begin-launches/index.html",
+		"/Users/leepeterson/Dropbox/Apps/site44/hiregems.site44.com/faq/index.html",
+		"/Users/leepeterson/Dropbox/Apps/site44/hiregems.site44.com/login/index.html",
+		"/Users/leepeterson/Dropbox/Apps/site44/hiregems.site44.com/my-account/account-information/index.html",
+		"/Users/leepeterson/Dropbox/Apps/site44/hiregems.site44.com/my-account/begin-launches/index.html",
+		"/Users/leepeterson/Dropbox/Apps/site44/hiregems.site44.com/my-account/billing-history/index.html",
+		"/Users/leepeterson/Dropbox/Apps/site44/hiregems.site44.com/my-account/launch-history/index.html",
+		"/Users/leepeterson/Dropbox/Apps/site44/hiregems.site44.com/my-account/my-credits/index.html",
+		"/Users/leepeterson/Dropbox/Apps/site44/hiregems.site44.com/my-account/newsletter-subscriptions/index.html",
+		"/Users/leepeterson/Dropbox/Apps/site44/hiregems.site44.com/products/index.html",
+		"/Users/leepeterson/Dropbox/Apps/site44/hiregems.site44.com/services/index.html",
+		"/Users/leepeterson/Dropbox/Apps/site44/hiregems.site44.com/terms-of-use/index.html",
+		"/Users/leepeterson/Dropbox/Apps/site44/hiregems.site44.com/what-we-do/index.html",
+		"/Users/leepeterson/Dropbox/Apps/site44/hiregems.site44.com/sass/app.scss",
+		"/Users/leepeterson/Library/Application Support/Sublime Text 2/Packages/User/divID.sublime-snippet",
+		"/Users/leepeterson/Library/Application Support/Sublime Text 2/Packages/User/divClass.sublime-snippet",
+		"/Users/leepeterson/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/leepeterson/Dropbox/Redfin/Title Forward/production/titleForward/tf_final-2013-01-29.tar.gz",
+		"/Users/leepeterson/Dropbox/Redfin/Title Forward/production/titleForward/agent-survey-thank-you.html",
+		"/Users/leepeterson/Dropbox/Redfin/Title Forward/production/titleForward/css/style.css",
+		"/Users/leepeterson/Dropbox/Redfin/Title Forward/production/titleForward/sftp-config.json",
+		"/Users/leepeterson/Dropbox/Redfin/Title Forward/production/titleForward/about.html",
+		"/Users/leepeterson/Dropbox/Redfin/Title Forward/production/titleForward/.gitignore",
+		"/Users/leepeterson/Downloads/carouFredSel-6.1.0 2/jquery.carouFredSel-6.1.0-packed.js",
+		"/Users/leepeterson/Downloads/carouFredSel-6.1.0 2/jquery.carouFredSel-6.1.0.js",
+		"/Users/leepeterson/Downloads/this.css",
+		"/Users/leepeterson/Downloads/carouFredSel-6.1.0 2/index.html",
+		"/Users/leepeterson/Downloads/carouFredSel-6.1.0 2/helper-plugins/jquery.touchSwipe.min.js",
+		"/Users/leepeterson/Library/Application Support/Sublime Text 2/Packages/Terminal/Terminal.sublime-settings",
+		"/Users/leepeterson/Library/Application Support/Sublime Text 2/Packages/User/Terminal.sublime-settings",
+		"/Users/leepeterson/Downloads/untitled.js",
+		"/Users/leepeterson/Library/Application Support/Sublime Text 2/Packages/User/Plain text.sublime-settings",
+		"/Users/leepeterson/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/Users/leepeterson/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/leepeterson/Downloads/js.js",
+		"/Users/leepeterson/Library/Application Support/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<project>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"  <div id=\"legal\">\n    <div class=\"row\">\n      <div class=\"twelve columns\">\n        <ul class=\"inline-list\">\n          <li><a href=\"/site-map/\">Site Map</a></li> <li class=\"divider\"></li>\n          <li><a href=\"/terms-of-use/\">Privacy Policy &amp; Terms of Use</a></li>\n          <li class=\"hide-for-small\">Our Family of Brands:</li>\n          <li><a href=\"http://www.traitset.com\">TraitSet</a></li>\n          <li>© 2013 HireGEMS</li>\n        </ul>\n      </div>\n    </div><!-- .row -->\n  </div><!-- #legal -->\n",
+			"&reg;",
+			"&trade;",
+			"9",
+			"Packages/Color Scheme - Default/Solarized (Dark).tmTheme"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"  <div id=\"legal\">\n    <div class=\"row\">\n      <div class=\"twelve columns\">\n        <ul class=\"inline-list\">\n          <li><a href=\"/site-map/\">Site Map</a></li> <li class=\"divider\"></li>\n          <li><a href=\"/terms-of-use/\">Privacy Policy &amp; Terms of Use</a></li>\n          <li>&copy;2013 HireGEMS. hireGEMS&trade; and TraitSet&reg; are owned, trade marked and register trade marked by HRgems, Inc.</li>\n        </ul>\n      </div>\n    </div><!-- .row -->\n  </div><!-- #legal -->\n",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 114.0
+	},
+	"output.guard":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 114.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/leepeterson/Downloads/this.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 292.0,
+	"status_bar_visible": true
+}
