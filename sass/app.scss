@@ -96,7 +96,7 @@ ul.accordion > li .content,
 ul.accordion > li.active .content,
 ul.accordion > li > div.title { padding: 0 !important; border: 0 !important; }
 ul.accordion > li > div.title { padding: inherit; background: rgba($highlightColor, 0.3); }
-ul.accordion > li > div.title::after, 
+ul.accordion > li > div.title::after,
 ul.accordion > li.active .title::after { top: 10px; }
 
 // Internal
@@ -289,6 +289,8 @@ body#home { background: $white url(../images/home-bg.png) 0 0 repeat-x; }
 #testimonials cite { font-size: .8em; color: $txtColor; }
 
 #customers-partners { margin-top: 30px; padding: 20px 0;border-top: 2px solid #ddd; background: #e6e6e4; }
+#customer-logos,
+#partner-logos { height: 60px !important; }
 
 
 // Begin Launches
@@ -347,7 +349,7 @@ body#account-information .accordion h4 { font-size: .9em; padding: 9px 10px; }
 #account-menu a { position: relative; background: #eee; font-size: .825em; line-height: 3.5em; padding-left: 23px; color:  $txtColor; }
 #account-menu a:after { left: 12px; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(161, 64, 55, 0); border-left-color: #a14037; border-width: 5px; top: 50%; margin-top: -5px; }
 
-#account-menu a:hover, 
+#account-menu a:hover,
 #account-menu .active a { background-color: rgb(255,255,255); @include filter-gradient(#ffffff, #f6f6f6, vertical); @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%)); color: $mainColor; @include text-shadow(0px 1px 0px $white); }
 
 #account-menu .tabs dd a { border-left: 1px solid transparent; border-right: 1px solid transparent; }
@@ -437,28 +439,28 @@ h4 + table { margin-top: -14px; @include border-radius(0 0 3px 3px); }
   #hero-wrapper div.orbit-wrapper div.slider-nav span.right,
   #hero-wrapper div.orbit-wrapper div.slider-nav span.left { display: none; }
   #hero a { margin: 0; }
-  
+
   body#services .ad-title,
   body#services .ad-content { padding: 20px; margin: 0; }
   body#services .ad-content { padding-top: 0; padding-bottom: 30px; }
 
   #download-cta .panel.callout .button { padding: 11px 14px 12px; margin-right: 0; }
-  
+
   #social-nav li { width: 45%; float: left; }
   #social-nav li:nth-child(odd) { margin-right: 5%; }
 }
 
 /* Landscape Orientation */
 @media screen and (orientation: landscape) {
-  
+
 }
 
 /* Portrait Orientation */
 @media screen and (orientation: portrait) {
-  
+
 }
 
 /* Touch Detection */
 .touch .your-class {
-  
+
 }

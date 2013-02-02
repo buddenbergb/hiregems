@@ -51,15 +51,15 @@ $(document).ready(function() {
   });
 
   $('.click-share').tabSlideOut({
-      tabHandle: '.handle',
-      pathToTabImage: '/images/click-share.png',
-      imageHeight: '218px',
-      imageWidth: '50px',
-      tabLocation: 'right',
-      speed: 300,
-      action: 'click',
-      topPos: '200px',
-      fixedPosition: true
+    tabHandle: '.handle',
+    pathToTabImage: '/images/click-share.png',
+    imageHeight: '218px',
+    imageWidth: '50px',
+    tabLocation: 'right',
+    speed: 300,
+    action: 'click',
+    topPos: '200px',
+    fixedPosition: true
   });
 
   $('.launch-now.enabled').click(function() {
